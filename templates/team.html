@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ team_name }} 隊伍</h2>
+
+<h3>球員名單</h3>
+<ul>
+    {% for p in players %}
+    <li><a href="/player/{{ p.id }}">{{ p.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<div id="scatter"></div>
+
+<script>
+const playersData = {{ players | tojson }};
+
+let scatter = {
+    x: playersData.map(p => p.whip || 0),
+    y: playersData.map(p => p.k9 || 0),
+    mode: "markers",
+    type: "scatter",
+    text: playersData.map(p => p.name)
+};
+
+Plotly.newPlot("scatter", [scatter]);
+</script>
+
+{% endblock %}

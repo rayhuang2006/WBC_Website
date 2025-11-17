@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>{{ player.name }}</h2>
+
+<div id="line"></div>
+
+<script>
+const player = {{ player | tojson }};
+
+let data = [{
+    x: ["2021", "2022", "2023"],
+    y: player.history_era || player.history_ops || [],
+    type: "scatter"
+}];
+
+Plotly.newPlot("line", data);
+</script>
+
+{% endblock %}

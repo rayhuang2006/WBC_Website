@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ pool_name }} 組隊伍</h2>
+
+<ul>
+    {% for team in teams %}
+    <li><a href="/team/{{ team.name }}">{{ team.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<div id="radar"></div>
+
+<script>
+// 從 Flask 拿到的資料已經包含 'normalized_stats'
+const teamData = {{ teams | tojson }};
+
+// 我們的標籤現在是標準化的戰力評分
+let labels = ["ERA 戰力", "OPS 戰力", "WHIP 戰力"];
+let traces = [];
+
+teamData.forEach(team => {
+    
+    // 讀取標準化後的分數
+    let stats = team.normalized_stats;
+    
+    traces.push({
+        type: "scatterpolar",
+        // 確保 r 軸的數據是標準化後的
+        r: [stats.ERA, stats.OPS, stats.WHIP],
+        theta: labels,
+        fill: "toself", // 加上這個會讓雷達圖填滿顏色，更美觀
+        name: team.name
+    });
+});
+
+let layout = {
+    polar: {
+        radialaxis: {
+            visible: true,
+            range: [0, 100] // 強制雷達圖的範圍是 0-100
+        }
+    }
+};
+
+Plotly.newPlot("radar", traces, layout);
+</script>
+
+{% endblock %}

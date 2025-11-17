@@ -1,0 +1,52 @@
+{
+    "Japan": {
+        "name": "Japan",
+        "players": ["j1", "j2"],
+        "team_stats": { "ERA": 2.80, "OPS": 0.750, "WHIP": 1.10 }
+    },
+    "Taiwan": {
+        "name": "Taiwan",
+        "players": ["t1"],
+        "team_stats": { "ERA": 4.20, "OPS": 0.680, "WHIP": 1.32 }
+    },
+    "Netherlands": {
+        "name": "Netherlands",
+        "players": [],
+        "team_stats": { "ERA": 3.50, "OPS": 0.710, "WHIP": 1.20 }
+    },
+    "Cuba": {
+        "name": "Cuba",
+        "players": [],
+        "team_stats": { "ERA": 3.80, "OPS": 0.700, "WHIP": 1.25 }
+    },
+    "Italy": {
+        "name": "Italy",
+        "players": [],
+        "team_stats": { "ERA": 4.50, "OPS": 0.650, "WHIP": 1.40 }
+    },
+    "Panama": {
+        "name": "Panama",
+        "players": [],
+        "team_stats": { "ERA": 4.10, "OPS": 0.670, "WHIP": 1.30 }
+    },
+    "Korea": {
+        "name": "Korea",
+        "players": [],
+        "team_stats": { "ERA": 3.10, "OPS": 0.720, "WHIP": 1.15 }
+    },
+    "Australia": {
+        "name": "Australia",
+        "players": [],
+        "team_stats": { "ERA": 3.90, "OPS": 0.690, "WHIP": 1.28 }
+    },
+    "China": {
+        "name": "China",
+        "players": [],
+        "team_stats": { "ERA": 5.50, "OPS": 0.610, "WHIP": 1.60 }
+    },
+    "Czech": {
+        "name": "Czech",
+        "players": [],
+        "team_stats": { "ERA": 4.80, "OPS": 0.640, "WHIP": 1.50 }
+    }
+}

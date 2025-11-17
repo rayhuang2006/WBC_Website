@@ -1,0 +1,10 @@
+{
+    "A": {
+        "name": "Pool A",
+        "teams": ["Taiwan", "Netherlands", "Cuba", "Italy", "Panama"]
+    },
+    "B": {
+        "name": "Pool B",
+        "teams": ["Japan", "Korea", "Australia", "China", "Czech"]
+    }
+}

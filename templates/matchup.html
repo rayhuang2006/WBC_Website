@@ -1,0 +1,94 @@
+<h2>對戰模擬器</h2>
+
+<div>
+    <select id="teamA">
+        <option value="">選擇隊伍 A</option>
+        {% for team in team_names %}
+        <option value="{{ team }}">{{ team }}</option>
+        {% endfor %}
+    </select>
+    
+    <span>VS</span>
+    
+    <select id="teamB">
+        <option value="">選擇隊伍 B</option>
+        {% for team in team_names %}
+        <option value="{{ team }}">{{ team }}</option>
+        {% endfor %}
+    </select>
+    
+    <button id="simulateBtn">開始模擬</button>
+</div>
+
+<hr>
+
+<h3>模擬結果</h3>
+<div id="result-text"></div>
+<div id="gauge-chart" style="width:600px;height:400px;"></div>
+
+<script>
+document.getElementById("simulateBtn").addEventListener("click", function() {
+    let teamA = document.getElementById("teamA").value;
+    let teamB = document.getElementById("teamB").value;
+    let resultDiv = document.getElementById("result-text");
+    let chartDiv = document.getElementById("gauge-chart");
+
+    if (!teamA || !teamB) {
+        resultDiv.innerText = "請選擇兩支隊伍。";
+        return;
+    }
+
+    // 顯示讀取中
+    resultDiv.innerText = "模擬中...";
+    Plotly.purge(chartDiv); // 清除舊圖表
+
+    // 1. 使用 Fetch API 發送 POST 請求到您的後端
+    fetch("/api/predict", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            "teamA": teamA,
+            "teamB": teamB
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // 2. 處理從 Flask 收到的 JSON 回應
+        if (data.error) {
+            resultDiv.innerText = "錯誤: " + data.error;
+            return;
+        }
+
+        resultDiv.innerText = `預測贏家: ${data.winner}`;
+
+        // 3. 使用 Plotly 繪製儀表板圖 (Gauge Chart)
+        // 這是您的第二個「課外圖表」！
+        let gaugeData = [
+            {
+                type: "indicator",
+                mode: "gauge+number",
+                value: data.teamA.win_probability * 100, // 轉為百分比
+                title: { text: `${data.teamA.name} 勝率` },
+                gauge: {
+                    axis: { range: [0, 100], ticksuffix: "%" },
+                    bar: { color: "blue" },
+                    steps: [
+                        { range: [0, 50], color: "lightgray" },
+                    ]
+                }
+            }
+        ];
+        
+        let layout = { 
+            title: `${data.teamA.name} (${data.teamA.win_probability * 100}%) vs ${data.teamB.name} (${data.teamB.win_probability * 100}%)`
+        };
+
+        Plotly.newPlot(chartDiv, gaugeData, layout);
+    })
+    .catch(error => {
+        resultDiv.innerText = "請求失敗: " + error;
+    });
+});
+</script>

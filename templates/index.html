@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>選擇分組</h2>
+
+<ul>
+    {% for key, pool in pools.items() %}
+    <li>
+        <a href="/pool/{{ key }}">{{ pool.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

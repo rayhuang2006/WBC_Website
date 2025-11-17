@@ -1,0 +1,25 @@
+{
+    "j1": {
+        "id": "j1",
+        "name": "Shohei Ohtani",
+        "type": "pitcher",
+        "whip": 0.95,
+        "k9": 12.5,
+        "history_era": [3.2, 2.8, 2.5]
+    },
+    "j2": {
+        "id": "j2",
+        "name": "Yoshinobu Yamamoto",
+        "type": "pitcher",
+        "whip": 1.02,
+        "k9": 11.1,
+        "history_era": [1.8, 1.9, 1.7]
+    },
+    "t1": {
+        "id": "t1",
+        "name": "Wang Po-Jung",
+        "type": "batter",
+        "ops": 0.820,
+        "history_ops": [0.810, 0.790, 0.820]
+    }
+}
