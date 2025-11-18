@@ -1,10 +1,42 @@
 {
-    "A": {
-        "name": "Pool A",
-        "teams": ["Taiwan", "Netherlands", "Cuba", "Italy", "Panama"]
-    },
-    "B": {
-        "name": "Pool B",
-        "teams": ["Japan", "Korea", "Australia", "China", "Czech"]
-    }
+  "A": {
+    "name": "Pool A",
+    "teams": [
+      "Puerto Rico",
+      "Canada",
+      "Cuba",
+      "Panama",
+      "Colombia"
+    ]
+  },
+  "B": {
+    "name": "Pool B",
+    "teams": [
+      "United States",
+      "Mexico",
+      "Italy",
+      "Great Britain",
+      "Brazil"
+    ]
+  },
+  "C": {
+    "name": "Pool C",
+    "teams": [
+      "Japan",
+      "Australia",
+      "Korea",
+      "Czech Republic",
+      "Chinese Taipei"
+    ]
+  },
+  "D": {
+    "name": "Pool D",
+    "teams": [
+      "Venezuela",
+      "Dominican Republic",
+      "Netherlands",
+      "Israel",
+      "Nicaragua"
+    ]
+  }
 }
