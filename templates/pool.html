@@ -1,15 +1,36 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>{{ pool_name }} 組隊伍</h2>
+<header>
+        <h2>WBC 戰力分析儀表板 - {{ pool_name }}</h2>
+        <a href="/" class="back-link">&larr; 返回 (L1) 世界總覽</a>
+</header>
 
-<ul>
-    {% for team in teams %}
-    <li><a href="/team/{{ team.name }}">{{ team.name }}</a></li>
-    {% endfor %}
-</ul>
+<main>
+        <section class="chart-container">
+            <h2>戰力雷達圖 (多維度比較)</h2>
+            <p>比較本組隊伍在打擊、投手、防守等面向的綜合戰力。</p>
+            <div id="radarPlot" class="plotly-chart"></div>
+        </section>
 
-<div id="radar"></div>
+        <section class="chart-container">
+            <h2>關鍵數據 (團隊 OPS / ERA)</h2>
+            <p>點擊下方任一長條圖可 "下鑽 (Drill Down)" 查看該隊伍 L3 詳細資料。</p>
+            <div id="barPlot" class="plotly-chart"></div>
+        </section>
+        
+        <section class="team-list-container">
+            <h2>分組隊伍 (點擊查看 L3 球員名單)</h2>
+            <div class="team-grid">
+                {% for team in team_list %}
+                    <a href="/team/{{ team.id }}" class="team-card">
+                        <img src="{{ url_for('static', filename='flags/' + team.iso_code + '.png') }}" alt="{{ team.name }}">
+                        <span>{{ team.name }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
 
 <script>
 // 從 Flask 拿到的資料已經包含 'normalized_stats'
@@ -43,7 +64,7 @@ let layout = {
     }
 };
 
-Plotly.newPlot("radar", traces, layout);
+Plotly.newPlot("radarPlot", traces, layout);
 </script>
 
 {% endblock %}
