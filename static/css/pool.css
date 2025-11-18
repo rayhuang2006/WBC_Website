@@ -1,0 +1,141 @@
+/* --- 全局設定 --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f9; /* 儀表板常用的淺灰色背景 */
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- 頁首 Header --- */
+header {
+    background-color: #003366; /* 棒球主題的深藍色 */
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.back-link {
+    color: #aaccff; /* 淺藍色，不搶眼 */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+/* --- 主內容區 Main --- */
+main {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    /* 建立一個 2 欄的網格佈局 */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* --- 圖表容器 (卡片樣式) --- */
+.chart-container,
+.team-list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* 讓雷達圖佔滿 2 欄 */
+    grid-column: span 2;
+}
+
+/* 讓長條圖只佔 1 欄 */
+.chart-container:nth-of-type(2) {
+    grid-column: span 1;
+}
+
+/* 讓隊伍列表佔 1 欄 */
+.team-list-container {
+    grid-column: span 1;
+}
+
+.chart-container h2,
+.team-list-container h2 {
+    margin-top: 0;
+    color: #003366;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.plotly-chart {
+    width: 100%;
+    min-height: 450px; /* 確保容器有高度 */
+}
+
+/* --- L3 隊伍卡片網格 --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 欄卡片 */
+    gap: 1rem;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.team-card:hover {
+    background-color: #e9ecef;
+    border-color: #003366;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.team-card img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* --- 響應式設計 (RWD) --- */
+@media (max-width: 992px) {
+    main {
+        /* 在平板和手機上，全部改為 1 欄 */
+        grid-template-columns: 1fr;
+    }
+
+    /* 在 1 欄時，全部都設為 span 1 */
+    .chart-container,
+    .team-list-container,
+    .chart-container:nth-of-type(2) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-grid {
+        /* 手機上，隊伍卡片也改為 1 欄 */
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
