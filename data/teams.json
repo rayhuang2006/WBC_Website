@@ -4,8 +4,8 @@
         "players": ["j1", "j2"],
         "team_stats": { "ERA": 2.80, "OPS": 0.750, "WHIP": 1.10 }
     },
-    "Taiwan": {
-        "name": "Taiwan",
+    "Chinese Taipei": {
+        "name": "Chinese Taipei",
         "players": ["t1"],
         "team_stats": { "ERA": 4.20, "OPS": 0.680, "WHIP": 1.32 }
     },
@@ -39,14 +39,44 @@
         "players": [],
         "team_stats": { "ERA": 3.90, "OPS": 0.690, "WHIP": 1.28 }
     },
-    "China": {
-        "name": "China",
-        "players": [],
-        "team_stats": { "ERA": 5.50, "OPS": 0.610, "WHIP": 1.60 }
-    },
-    "Czech": {
-        "name": "Czech",
+    "Czech Republic": {
+        "name": "Czech Republic",
         "players": [],
         "team_stats": { "ERA": 4.80, "OPS": 0.640, "WHIP": 1.50 }
+    },
+    "Colombia": {
+        "name": "Colombia",
+        "players": [],
+        "team_stats": { "ERA": 4.30, "OPS": 0.660, "WHIP": 1.35 }
+    },
+    "Puerto Rico": {
+        "name": "Puerto Rico",
+        "players": [],
+        "team_stats": { "ERA": 3.60, "OPS": 0.705, "WHIP": 1.22 }
+    },
+    "Canada": {
+        "name": "Canada",
+        "players": [],
+        "team_stats": { "ERA": 4.00, "OPS": 0.675, "WHIP": 1.30 }
+    },
+    "Venezuela": {
+        "name": "Venezuela",
+        "players": [],
+        "team_stats": { "ERA": 3.70, "OPS": 0.695, "WHIP": 1.24 }
+    },
+    "Dominican Republic": {
+        "name": "Dominican Republic",
+        "players": [],
+        "team_stats": { "ERA": 3.40, "OPS": 0.715, "WHIP": 1.18 }
+    },
+    "Israel": {
+        "name": "Israel",
+        "players": [],
+        "team_stats": { "ERA": 4.20, "OPS": 0.690, "WHIP": 1.28 }
+    },
+    "Nicaragua": {
+        "name": "Nicaragua",
+        "players": [],
+        "team_stats": { "ERA": 4.60, "OPS": 0.645, "WHIP": 1.45 }
     }
 }
