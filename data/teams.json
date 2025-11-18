@@ -78,5 +78,25 @@
         "name": "Nicaragua",
         "players": [],
         "team_stats": { "ERA": 4.60, "OPS": 0.645, "WHIP": 1.45 }
+    },
+    "United States": {
+        "name": "United States",
+        "players": [],
+        "team_stats": { "ERA": 3.20, "OPS": 0.730, "WHIP": 1.12 }
+    },
+    "Mexico": {
+        "name": "Mexico",
+        "players": [],
+        "team_stats": { "ERA": 4.00, "OPS": 0.680, "WHIP": 1.30 }
+    },
+    "Great Britain": {
+        "name": "Great Britain",
+        "players": [],
+        "team_stats": { "ERA": 4.70, "OPS": 0.660, "WHIP": 1.40 }
+    },
+    "Brazil": {
+        "name": "Brazil",
+        "players": [],
+        "team_stats": { "ERA": 4.90, "OPS": 0.630, "WHIP": 1.55 }
     }
 }
