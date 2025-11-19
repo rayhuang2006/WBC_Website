@@ -1,102 +1,102 @@
 {
     "Japan": {
         "name": "Japan",
-        "players": ["j1", "j2"],
+        "players": ["JPN1","JPN2","JPN3","JPN4","JPN5","JPN6","JPN7","JPN8","JPN9","JPN10","JPN11","JPN12","JPN13","JPN14","JPN15","JPN16","JPN17","JPN18","JPN19","JPN20","JPN21","JPN22","JPN23","JPN24","JPN25","JPN26","JPN27","JPN28","JPN29","JPN30"],
         "team_stats": { "ERA": 2.80, "OPS": 0.750, "WHIP": 1.10 }
     },
     "Chinese Taipei": {
         "name": "Chinese Taipei",
-        "players": ["t1"],
+        "players": ["TPE1","TPE2","TPE3","TPE4","TPE5","TPE6","TPE7","TPE8","TPE9","TPE10","TPE11","TPE12","TPE13","TPE14","TPE15","TPE16","TPE17","TPE18","TPE19","TPE20","TPE21","TPE22","TPE23","TPE24","TPE25","TPE26","TPE27","TPE28","TPE29","TPE30"],
         "team_stats": { "ERA": 4.20, "OPS": 0.680, "WHIP": 1.32 }
     },
     "Netherlands": {
         "name": "Netherlands",
-        "players": [],
+        "players": ["NED1","NED2","NED3","NED4","NED5","NED6","NED7","NED8","NED9","NED10","NED11","NED12","NED13","NED14","NED15","NED16","NED17","NED18","NED19","NED20","NED21","NED22","NED23","NED24","NED25","NED26","NED27"],
         "team_stats": { "ERA": 3.50, "OPS": 0.710, "WHIP": 1.20 }
     },
     "Cuba": {
         "name": "Cuba",
-        "players": [],
+        "players": ["CUB1","CUB2","CUB3","CUB4","CUB5","CUB6","CUB7","CUB8","CUB9","CUB10","CUB11","CUB12","CUB13","CUB14","CUB15","CUB16","CUB17","CUB18","CUB19","CUB20","CUB21","CUB22","CUB23","CUB24","CUB25","CUB26","CUB27","CUB28","CUB29"],
         "team_stats": { "ERA": 3.80, "OPS": 0.700, "WHIP": 1.25 }
     },
     "Italy": {
         "name": "Italy",
-        "players": [],
+        "players": ["ITA1","ITA2","ITA3","ITA4","ITA5","ITA6","ITA7","ITA8","ITA9","ITA10","ITA11","ITA12","ITA13","ITA14","ITA15","ITA16","ITA17","ITA18","ITA19","ITA20","ITA21","ITA22","ITA23","ITA24","ITA25","ITA26","ITA27","ITA28"],
         "team_stats": { "ERA": 4.50, "OPS": 0.650, "WHIP": 1.40 }
     },
     "Panama": {
         "name": "Panama",
-        "players": [],
+        "players": ["PAN1","PAN2","PAN3","PAN4","PAN5","PAN6","PAN7","PAN8","PAN9","PAN10","PAN11","PAN12","PAN13","PAN14","PAN15","PAN16","PAN17","PAN18","PAN19","PAN20","PAN21","PAN22","PAN23","PAN24","PAN25","PAN26","PAN27","PAN28","PAN29"],
         "team_stats": { "ERA": 4.10, "OPS": 0.670, "WHIP": 1.30 }
     },
     "Korea": {
         "name": "Korea",
-        "players": [],
+        "players": ["KOR1","KOR2","KOR3","KOR4","KOR5","KOR6","KOR7","KOR8","KOR9","KOR10","KOR11","KOR12","KOR13","KOR14","KOR15","KOR16","KOR17","KOR18","KOR19","KOR20","KOR21","KOR22","KOR23","KOR24","KOR25","KOR26","KOR27","KOR28","KOR29"],
         "team_stats": { "ERA": 3.10, "OPS": 0.720, "WHIP": 1.15 }
     },
     "Australia": {
         "name": "Australia",
-        "players": [],
+        "players": ["AUS1","AUS2","AUS3","AUS4","AUS5","AUS6","AUS7","AUS8","AUS9","AUS10","AUS11","AUS12","AUS13","AUS14","AUS15","AUS16","AUS17","AUS18","AUS19","AUS20","AUS21","AUS22","AUS23","AUS24","AUS25","AUS26","AUS27","AUS28","AUS29","AUS30","AUS31"],
         "team_stats": { "ERA": 3.90, "OPS": 0.690, "WHIP": 1.28 }
     },
     "Czech Republic": {
         "name": "Czech Republic",
-        "players": [],
+        "players": ["CZE1","CZE2","CZE3","CZE4","CZE5","CZE6","CZE7","CZE8","CZE9","CZE10","CZE11","CZE12","CZE13","CZE14","CZE15","CZE16","CZE17","CZE18","CZE19","CZE20","CZE21","CZE22","CZE23","CZE24","CZE25","CZE26","CZE27","CZE28","CZE29"],
         "team_stats": { "ERA": 4.80, "OPS": 0.640, "WHIP": 1.50 }
     },
     "Colombia": {
         "name": "Colombia",
-        "players": [],
+        "players": ["COL1","COL2","COL3","COL4","COL5","COL6","COL7","COL8","COL9","COL10","COL11","COL12","COL13","COL14","COL15","COL16","COL17","COL18","COL19","COL20","COL21","COL22","COL23","COL24","COL25","COL26","COL27","COL28","COL29","COL30"],
         "team_stats": { "ERA": 4.30, "OPS": 0.660, "WHIP": 1.35 }
     },
     "Puerto Rico": {
         "name": "Puerto Rico",
-        "players": [],
+        "players": ["PUR1","PUR2","PUR3","PUR4","PUR5","PUR6","PUR7","PUR8","PUR9","PUR10","PUR11","PUR12","PUR13","PUR14","PUR15","PUR16","PUR17","PUR18","PUR19","PUR20","PUR21","PUR22","PUR23","PUR24","PUR25","PUR26","PUR27","PUR28","PUR29","PUR30"],
         "team_stats": { "ERA": 3.60, "OPS": 0.705, "WHIP": 1.22 }
     },
     "Canada": {
         "name": "Canada",
-        "players": [],
+        "players": ["CAN1","CAN2","CAN3","CAN4","CAN5","CAN6","CAN7","CAN8","CAN9","CAN10","CAN11","CAN12","CAN13","CAN14","CAN15","CAN16","CAN17","CAN18","CAN19","CAN20","CAN21","CAN22","CAN23","CAN24","CAN25","CAN26","CAN27","CAN28"],
         "team_stats": { "ERA": 4.00, "OPS": 0.675, "WHIP": 1.30 }
     },
     "Venezuela": {
         "name": "Venezuela",
-        "players": [],
+        "players": ["VEN1","VEN2","VEN3","VEN4","VEN5","VEN6","VEN7","VEN8","VEN9","VEN10","VEN11","VEN12","VEN13","VEN14","VEN15","VEN16","VEN17","VEN18","VEN19","VEN20","VEN21","VEN22","VEN23","VEN24","VEN25","VEN26","VEN27","VEN28","VEN29","VEN30"],
         "team_stats": { "ERA": 3.70, "OPS": 0.695, "WHIP": 1.24 }
     },
     "Dominican Republic": {
         "name": "Dominican Republic",
-        "players": [],
+        "players": ["DOM1","DOM2","DOM3","DOM4","DOM5","DOM6","DOM7","DOM8","DOM9","DOM10","DOM11","DOM12","DOM13","DOM14","DOM15","DOM16","DOM17","DOM18","DOM19","DOM20","DOM21","DOM22","DOM23","DOM24","DOM25","DOM26","DOM27","DOM28","DOM29","DOM30"],
         "team_stats": { "ERA": 3.40, "OPS": 0.715, "WHIP": 1.18 }
     },
     "Israel": {
         "name": "Israel",
-        "players": [],
+        "players": ["ISR1","ISR2","ISR3","ISR4","ISR5","ISR6","ISR7","ISR8","ISR9","ISR10","ISR11","ISR12","ISR13","ISR14","ISR15","ISR16","ISR17","ISR18","ISR19","ISR20","ISR21","ISR22","ISR23","ISR24","ISR25","ISR26","ISR27","ISR28","ISR29","ISR30","ISR31"],
         "team_stats": { "ERA": 4.20, "OPS": 0.690, "WHIP": 1.28 }
     },
     "Nicaragua": {
         "name": "Nicaragua",
-        "players": [],
+        "players": ["NCA1","NCA2","NCA3","NCA4","NCA5","NCA6","NCA7","NCA8","NCA9","NCA10","NCA11","NCA12","NCA13","NCA14","NCA15","NCA16","NCA17","NCA18","NCA19","NCA20","NCA21","NCA22","NCA23","NCA24","NCA25","NCA26","NCA27","NCA28","NCA29","NCA30"],
         "team_stats": { "ERA": 4.60, "OPS": 0.645, "WHIP": 1.45 }
     },
     "United States": {
         "name": "United States",
-        "players": [],
+        "players": ["USA1","USA2","USA3","USA4","USA5","USA6","USA7","USA8","USA9","USA10","USA11","USA12","USA13","USA14","USA15","USA16","USA17","USA18","USA19","USA20","USA21","USA22","USA23","USA24","USA25","USA26","USA27","USA28","USA29","USA30"],
         "team_stats": { "ERA": 3.20, "OPS": 0.730, "WHIP": 1.12 }
     },
     "Mexico": {
         "name": "Mexico",
-        "players": [],
+        "players": ["MEX1","MEX2","MEX3","MEX4","MEX5","MEX6","MEX7","MEX8","MEX9","MEX10","MEX11","MEX12","MEX13","MEX14","MEX15","MEX16","MEX17","MEX18","MEX19","MEX20","MEX21","MEX22","MEX23","MEX24","MEX25","MEX26","MEX27","MEX28","MEX29","MEX30"],
         "team_stats": { "ERA": 4.00, "OPS": 0.680, "WHIP": 1.30 }
     },
     "Great Britain": {
         "name": "Great Britain",
-        "players": [],
+        "players": ["GBR1","GBR2","GBR3","GBR4","GBR5","GBR6","GBR7","GBR8","GBR9","GBR10","GBR11","GBR12","GBR13","GBR14","GBR15","GBR16","GBR17","GBR18","GBR19","GBR20","GBR21","GBR22","GBR23","GBR24","GBR25","GBR26","GBR27","GBR28","GBR29"],
         "team_stats": { "ERA": 4.70, "OPS": 0.660, "WHIP": 1.40 }
     },
     "Brazil": {
         "name": "Brazil",
-        "players": [],
+        "players": ["BRA1","BRA2","BRA3","BRA4","BRA5","BRA6","BRA7","BRA8","BRA9","BRA10","BRA11","BRA12","BRA13","BRA14","BRA15","BRA16","BRA17","BRA18","BRA19","BRA20","BRA21","BRA22","BRA23","BRA24","BRA25","BRA26","BRA27"],
         "team_stats": { "ERA": 4.90, "OPS": 0.630, "WHIP": 1.55 }
     }
 }
