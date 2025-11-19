@@ -2,41 +2,41 @@
   "A": {
     "name": "Pool A",
     "teams": [
-      "Puerto Rico",
-      "Canada",
-      "Cuba",
-      "Panama",
-      "Colombia"
+      {"name":"Puerto Rico","iso_code":"PRI"},
+      {"name":"Canada","iso_code":"CAN"},
+      {"name":"Cuba","iso_code":"CUB"},
+      {"name":"Panama","iso_code":"PAN"},
+      {"name":"Colombia","iso_code":"COL"}
     ]
   },
   "B": {
     "name": "Pool B",
     "teams": [
-      "United States",
-      "Mexico",
-      "Italy",
-      "Great Britain",
-      "Brazil"
+      {"name":"United States","iso_code":"USA"},
+      {"name":"Mexico","iso_code":"MEX"},
+      {"name":"Italy","iso_code":"ITA"},
+      {"name":"Great Britain","iso_code":"GBR"},
+      {"name":"Brazil","iso_code":"BRA"}
     ]
   },
   "C": {
     "name": "Pool C",
     "teams": [
-      "Japan",
-      "Australia",
-      "Korea",
-      "Czech Republic",
-      "Chinese Taipei"
+      {"name":"Japan","iso_code":"JPN"},
+      {"name":"Australia","iso_code":"AUS"},
+      {"name":"Korea","iso_code":"KOR"},
+      {"name":"Czech Republic","iso_code":"CZE"},
+      {"name":"Chinese Taipei","iso_code":"TPE"}
     ]
   },
   "D": {
     "name": "Pool D",
     "teams": [
-      "Venezuela",
-      "Dominican Republic",
-      "Netherlands",
-      "Israel",
-      "Nicaragua"
+      {"name":"Venezuela","iso_code":"VEN"},
+      {"name":"Dominican Republic","iso_code":"DOM"},
+      {"name":"Netherlands","iso_code":"NLD"},
+      {"name":"Israel","iso_code":"ISR"},
+      {"name":"Nicaragua","iso_code":"NCA"}
     ]
   }
 }
