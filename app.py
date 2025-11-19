@@ -16,10 +16,10 @@ def pool_page(pool_name):
     teams_data = load_json("data/teams.json") # 確保變數名稱不衝突
 
     pool_info = pools.get(pool_name.upper(), {})
-    
+    print(f"Loading pool: {pool_name}, Info: {pool_info}")
     # 原始的隊伍資料
-    pool_teams_raw = [teams_data[t] for t in pool_info.get("teams", [])]
-    
+    pool_teams_raw = [teams_data[t["name"]] for t in pool_info.get("teams", [])]
+    team_list = pool_info.get("teams", [])
     # --- 任務二：資料標準化 ---
     # 這裡我們建立一個新的列表，包含標準化後的統計數據
     # 假設：ERA 越低越好 (10 -> 0分, 0 -> 100分)
@@ -56,7 +56,7 @@ def pool_page(pool_name):
         processed_teams.append(team)
     # ---------------------------
 
-    return render_template("pool.html", pool_name=pool_name, teams=processed_teams)
+    return render_template("pool.html", pool_name=pool_name, teams=processed_teams, team_list=team_list)
 
 
 @app.route("/team/<team_name>")

@@ -3,69 +3,53 @@
 
 {% block content %}
 <header>
-        <h2>WBC 戰力分析儀表板 - {{ pool_name }}</h2>
-        <a href="/" class="back-link">&larr; 返回 (L1) 世界總覽</a>
+    <h2>WBC 戰力分析儀表板 - {{ pool_name }}</h2>
+    <a href="/" class="back-link">&larr; 返回 (L1) 世界總覽</a>
 </header>
 
 <main>
-        <section class="chart-container">
-            <h2>戰力雷達圖 (多維度比較)</h2>
-            <p>比較本組隊伍在打擊、投手、防守等面向的綜合戰力。</p>
-            <div id="radarPlot" class="plotly-chart"></div>
-        </section>
+    <section class="chart-container">
+        <h2>戰力雷達圖 (多維度比較)</h2>
+        <p>比較本組隊伍在打擊、投手、防守等面向的綜合戰力。</p>
+        <div id="radarPlot" class="plotly-chart"></div>
+    </section>
 
-        <section class="chart-container">
-            <h2>關鍵數據 (團隊 OPS / ERA)</h2>
-            <p>點擊下方任一長條圖可 "下鑽 (Drill Down)" 查看該隊伍 L3 詳細資料。</p>
-            <div id="barPlot" class="plotly-chart"></div>
-        </section>
-        
-        <section class="team-list-container">
-            <h2>分組隊伍 (點擊查看 L3 球員名單)</h2>
-            <div class="team-grid">
-                {% for team in team_list %}
-                    <a href="/team/{{ team.id }}" class="team-card">
-                        <img src="{{ url_for('static', filename='flags/' + team.iso_code + '.png') }}" alt="{{ team.name }}">
-                        <span>{{ team.name }}</span>
-                    </a>
-                {% endfor %}
-            </div>
-        </section>
-    </main>
+    <section class="chart-container">
+        <h2>關鍵數據 (團隊 OPS / ERA)</h2>
+        <div id="barPlot" class="plotly-chart"></div>
+    </section>
+
+    <section class="team-list-container">
+        <h2>分組隊伍 (點擊查看 L3 球員名單)</h2>
+        <div class="team-grid">
+            {% for team in team_list %}
+            <a href="/team/{{ team.name }}" class="team-card">
+                <img src="{{ url_for('static', filename='flags/' + team.iso_code + '.png') }}" alt="{{ team.name }}">
+                <span>{{ team.name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/pool.js') }}"></script>
 
 <script>
-// 從 Flask 拿到的資料已經包含 'normalized_stats'
-const teamData = {{ teams | tojson }};
+    // 等待網頁載入完成後再執行 (這是好習慣)
+    document.addEventListener('DOMContentLoaded', function () {
 
-// 我們的標籤現在是標準化的戰力評分
-let labels = ["ERA 戰力", "OPS 戰力", "WHIP 戰力"];
-let traces = [];
+        // 從 Flask 傳來的資料
+        const flaskData = {{ teams | tojson }};
+        
+        // 繪製雷達圖
+        drawRadarChart(flaskData);
 
-teamData.forEach(team => {
-    
-    // 讀取標準化後的分數
-    let stats = team.normalized_stats;
-    
-    traces.push({
-        type: "scatterpolar",
-        // 確保 r 軸的數據是標準化後的
-        r: [stats.ERA, stats.OPS, stats.WHIP],
-        theta: labels,
-        fill: "toself", // 加上這個會讓雷達圖填滿顏色，更美觀
-        name: team.name
+        // 繪製長條圖
+        drawBarChart(flaskData);
+        
     });
-});
-
-let layout = {
-    polar: {
-        radialaxis: {
-            visible: true,
-            range: [0, 100] // 強制雷達圖的範圍是 0-100
-        }
-    }
-};
-
-Plotly.newPlot("radarPlot", traces, layout);
 </script>
 
 {% endblock %}
