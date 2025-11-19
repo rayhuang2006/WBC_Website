@@ -1,29 +1,95 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 8px 0 16px 0;
+  padding: 0;
+}
+.player-item {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  word-break: keep-all;
+}
+@media (max-width: 700px) {
+  .player-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+
 <h2>{{ team_name }} 隊伍</h2>
 
 <h3>球員名單</h3>
-<ul>
-    {% for p in players %}
-    <li><a href="/player/{{ p.id }}">{{ p.name }}</a></li>
-    {% endfor %}
-</ul>
 
+{% set pitchers = players|selectattr('type','equalto','pitcher')|list %}
+{% set batters  = players|selectattr('type','equalto','batter')|list %}
+
+<h4>投手</h4>
+<div class="player-grid">
+  {% for p in pitchers %}
+  <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
+  {% else %}
+  <div class="player-item">無投手資料</div>
+  {% endfor %}
+</div>
+
+<h4>打者</h4>
+<div class="player-grid">
+  {% for p in batters %}
+  <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
+  {% else %}
+  <div class="player-item">無打者資料</div>
+  {% endfor %}
+</div>
 <div id="scatter"></div>
+<div id="bar" style="margin-top:30px;"></div>
 
 <script>
 const playersData = {{ players | tojson }};
 
-let scatter = {
-    x: playersData.map(p => p.whip || 0),
-    y: playersData.map(p => p.k9 || 0),
+const pitchersData = playersData.filter(p => p.type === "pitcher");
+const battersData  = playersData.filter(p => p.type === "batter");
+
+// 投手散點圖（WHIP vs K/9）
+const pitcherTrace = {
+    x: pitchersData.map(p => p.whip || 0),
+    y: pitchersData.map(p => p.k9 || 0),
     mode: "markers",
     type: "scatter",
-    text: playersData.map(p => p.name)
+    name: "投手 (WHIP vs K/9)",
+    text: pitchersData.map(p => p.name)
 };
 
-Plotly.newPlot("scatter", [scatter]);
+const scatterLayout = {
+    title: "投手散點圖",
+    xaxis: { title: "WHIP" },
+    yaxis: { title: "K/9" }
+};
+
+Plotly.newPlot("scatter", [pitcherTrace], scatterLayout);
+
+// 打者 OPS 長條圖
+const barTrace = {
+    x: battersData.map(p => p.name),
+    y: battersData.map(p => p.ops || 0),
+    type: "bar",
+    name: "打者 OPS",
+    marker: { color: "orange" },
+    text: battersData.map(p => p.ops != null ? p.ops : "")
+};
+
+const barLayout = {
+    title: "打者 OPS 長條圖",
+    xaxis: { title: "球員名稱", tickangle: -45 },
+    yaxis: { title: "OPS" },
+    margin: { b: 140 }
+};
+
+Plotly.newPlot("bar", [barTrace], barLayout);
 </script>
 
 {% endblock %}

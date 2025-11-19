@@ -1,25 +1,5527 @@
 {
-    "j1": {
-        "id": "j1",
+    "AUS1": {
+        "id": "AUS1",
+        "name": "Rixon Wingrove",
+        "type": "batter",
+        "ops": 1.069,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS2": {
+        "id": "AUS2",
+        "name": "Ryan Battaglia",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS3": {
+        "id": "AUS3",
+        "name": "Jake Bowey",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS4": {
+        "id": "AUS4",
+        "name": "Jarryd Dale",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS5": {
+        "id": "AUS5",
+        "name": "Robbie Glendinning",
+        "type": "batter",
+        "ops": 0.991,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS6": {
+        "id": "AUS6",
+        "name": "Logan Wade",
+        "type": "batter",
+        "ops": 0.971,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS7": {
+        "id": "AUS7",
+        "name": "Alex Hall",
+        "type": "batter",
+        "ops": 0.928,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS8": {
+        "id": "AUS8",
+        "name": "Tim Kennelly",
+        "type": "batter",
+        "ops": 0.9,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS9": {
+        "id": "AUS9",
+        "name": "Aaron Whitefield",
+        "type": "batter",
+        "ops": 0.856,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS10": {
+        "id": "AUS10",
+        "name": "Robbie Perkins",
+        "type": "batter",
+        "ops": 0.651,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS11": {
+        "id": "AUS11",
+        "name": "Darryl George",
+        "type": "batter",
+        "ops": 0.568,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS12": {
+        "id": "AUS12",
+        "name": "Ulrich Bojarski",
+        "type": "batter",
+        "ops": 0.567,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS13": {
+        "id": "AUS13",
+        "name": "Andrew Campbell",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS14": {
+        "id": "AUS14",
+        "name": "Jordan McArdle",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS15": {
+        "id": "AUS15",
+        "name": "Warwick Saupold",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS16": {
+        "id": "AUS16",
+        "name": "Liam Spence",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "AUS17": {
+        "id": "AUS17",
+        "name": "Daniel McGrath",
+        "type": "pitcher",
+        "whip": 1.37,
+        "k9": 7.5,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS18": {
+        "id": "AUS18",
+        "name": "Mitch Neunborn",
+        "type": "pitcher",
+        "whip": 1.06,
+        "k9": 5.192307692307692,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS19": {
+        "id": "AUS19",
+        "name": "Jack O'Loughlin",
+        "type": "pitcher",
+        "whip": 0.21,
+        "k9": 6.428571428571429,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS20": {
+        "id": "AUS20",
+        "name": "Josh Guyer",
+        "type": "pitcher",
+        "whip": 1.67,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS21": {
+        "id": "AUS21",
+        "name": "Todd Van Steensel",
+        "type": "pitcher",
+        "whip": 0.67,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS22": {
+        "id": "AUS22",
+        "name": "Luke Wilkins",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS23": {
+        "id": "AUS23",
+        "name": "Kyle Glogoski",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS24": {
+        "id": "AUS24",
+        "name": "Coen Wynne",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS25": {
+        "id": "AUS25",
+        "name": "Steven Kent",
+        "type": "pitcher",
+        "whip": 2.57,
+        "k9": 21.428571428571427,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS26": {
+        "id": "AUS26",
+        "name": "Sam Holland",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS27": {
+        "id": "AUS27",
+        "name": "Jon Kennedy",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS28": {
+        "id": "AUS28",
+        "name": "Warwick Saupold",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 7.5,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS29": {
+        "id": "AUS29",
+        "name": "William Sherriff",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS30": {
+        "id": "AUS30",
+        "name": "Liam Doolan",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "AUS31": {
+        "id": "AUS31",
+        "name": "Blake Townsend",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 27.0,
+        "history_era": [
+            0
+        ]
+    },
+    "BRA1": {
+      "id": "BRA1",
+      "name": "Osvaldo Carvalho",
+      "type": "batter",
+      "ops": 1.350,
+      "history_ops": [0]
+    },
+    "BRA2": {
+      "id": "BRA2",
+      "name": "Leonardo Reginatto",
+      "type": "batter",
+      "ops": 1.082,
+      "history_ops": [0]
+    },
+    "BRA3": {
+      "id": "BRA3",
+      "name": "Lucas Rojo",
+      "type": "batter",
+      "ops": 1.000,
+      "history_ops": [0]
+    },
+    "BRA4": {
+      "id": "BRA4",
+      "name": "Lucas Ramirez",
+      "type": "batter",
+      "ops": 0.847,
+      "history_ops": [0]
+    },
+    "BRA5": {
+      "id": "BRA5",
+      "name": "Vitor Ito",
+      "type": "batter",
+      "ops": 0.770,
+      "history_ops": [0]
+    },
+    "BRA6": {
+      "id": "BRA6",
+      "name": "Victor Mascai",
+      "type": "batter",
+      "ops": 0.713,
+      "history_ops": [0]
+    },
+    "BRA7": {
+      "id": "BRA7",
+      "name": "Gabriel Gomes",
+      "type": "batter",
+      "ops": 0.694,
+      "history_ops": [0]
+    },
+    "BRA8": {
+      "id": "BRA8",
+      "name": "Dante Bichette",
+      "type": "batter",
+      "ops": 0.686,
+      "history_ops": [0]
+    },
+    "BRA9": {
+      "id": "BRA9",
+      "name": "Gabriel do Carmo",
+      "type": "batter",
+      "ops": 0.533,
+      "history_ops": [0]
+    },
+    "BRA10": {
+      "id": "BRA10",
+      "name": "Felipe Mizukosi",
+      "type": "batter",
+      "ops": 0.500,
+      "history_ops": [0]
+    },
+    "BRA11": {
+      "id": "BRA11",
+      "name": "Gabriel Maciel",
+      "type": "batter",
+      "ops": 0.226,
+      "history_ops": [0]
+    },
+    "BRA12": {
+      "id": "BRA12",
+      "name": "Matheus Lelis",
+      "type": "batter",
+      "ops": 0.000,
+      "history_ops": [0]
+    },
+    "BRA13": {
+      "id": "BRA13",
+      "name": "Tiago Nishiyama",
+      "type": "batter",
+      "ops": 0.000,
+      "history_ops": [0]
+    },
+    "BRA14": {
+      "id": "BRA14",
+      "name": "Daniel Yonemura",
+      "type": "batter",
+      "ops": 0.000,
+      "history_ops": [0]
+    },
+    "BRA15": {
+      "id": "BRA15",
+      "name": "Marcelo Young",
+      "type": "pitcher",
+      "whip": 0.50,
+      "k9": 9.0,
+      "history_era": [0]
+    },
+    "BRA16": {
+      "id": "BRA16",
+      "name": "Heitor Tokar",
+      "type": "pitcher",
+      "whip": 0.60,
+      "k9": 13.50,
+      "history_era": [0]
+    },
+    "BRA17": {
+      "id": "BRA17",
+      "name": "Arthur Tsujiguchi",
+      "type": "pitcher",
+      "whip": 0.75,
+      "k9": 9.00,
+      "history_era": [0]
+    },
+    "BRA18": {
+      "id": "BRA18",
+      "name": "Murilo Gouvea",
+      "type": "pitcher",
+      "whip": 1.50,
+      "k9": 6.75,
+      "history_era": [0]
+    },
+    "BRA19": {
+      "id": "BRA19",
+      "name": "Pedro Da Costa Lemos",
+      "type": "pitcher",
+      "whip": 1.50,
+      "k9": 12.27,
+      "history_era": [0]
+    },
+    "BRA20": {
+      "id": "BRA20",
+      "name": "Hector Villarroel",
+      "type": "pitcher",
+      "whip": 1.50,
+      "k9": 9.00,
+      "history_era": [0]
+    },
+    "BRA21": {
+      "id": "BRA21",
+      "name": "Enzo Sawayama",
+      "type": "pitcher",
+      "whip": 1.64,
+      "k9": 11.25,
+      "history_era": [0]
+    },
+    "BRA22": {
+      "id": "BRA22",
+      "name": "Tiago Da Silva",
+      "type": "pitcher",
+      "whip": 1.80,
+      "k9": 5.40,
+      "history_era": [0]
+    },
+    "BRA23": {
+      "id": "BRA23",
+      "name": "Oscar Nakaoshi",
+      "type": "pitcher",
+      "whip": 1.85,
+      "k9": 6.53,
+      "history_era": [0]
+    },
+    "BRA24": {
+      "id": "BRA24",
+      "name": "Hugo Kanabushi",
+      "type": "pitcher",
+      "whip": 2.00,
+      "k9": 18.00,
+      "history_era": [0]
+    },
+    "BRA25": {
+      "id": "BRA25",
+      "name": "Eric Pardinho",
+      "type": "pitcher",
+      "whip": 2.00,
+      "k9": 18.00,
+      "history_era": [0]
+    },
+    "BRA26": {
+      "id": "BRA26",
+      "name": "Bo Takahashi",
+      "type": "pitcher",
+      "whip": 2.14,
+      "k9": 12.86,
+      "history_era": [0]
+    },
+    "BRA27": {
+      "id": "BRA27",
+      "name": "Joao Gabriel Marostica",
+      "type": "pitcher",
+      "whip": 3.00,
+      "k9": 9.00,
+      "history_era": [0]
+    },
+    "CAN1": {
+        "id": "CAN1",
+        "name": "Edouard Julien",
+        "type": "batter",
+        "ops": 1.821,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN2": {
+        "id": "CAN2",
+        "name": "Tyler O'Neill",
+        "type": "batter",
+        "ops": 1.491,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN3": {
+        "id": "CAN3",
+        "name": "Jacob Robson",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN4": {
+        "id": "CAN4",
+        "name": "Otto Lopez",
+        "type": "batter",
+        "ops": 0.921,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN5": {
+        "id": "CAN5",
+        "name": "Abraham Toro",
+        "type": "batter",
+        "ops": 0.812,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN6": {
+        "id": "CAN6",
+        "name": "Owen Caissie",
+        "type": "batter",
+        "ops": 0.748,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN7": {
+        "id": "CAN7",
+        "name": "Jared Young",
+        "type": "batter",
+        "ops": 0.69,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN8": {
+        "id": "CAN8",
+        "name": "Bo Naylor",
+        "type": "batter",
+        "ops": 0.65,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN9": {
+        "id": "CAN9",
+        "name": "Freddie Freeman",
+        "type": "batter",
+        "ops": 0.473,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN10": {
+        "id": "CAN10",
+        "name": "Denzel Clarke",
+        "type": "batter",
+        "ops": 0.2,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN11": {
+        "id": "CAN11",
+        "name": "Dasan Brown",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CAN12": {
+        "id": "CAN12",
+        "name": "Noah Skirrow",
+        "type": "pitcher",
+        "whip": 0.6,
+        "k9": 7.2,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN13": {
+        "id": "CAN13",
+        "name": "Indigo Diaz",
+        "type": "pitcher",
+        "whip": 0.9,
+        "k9": 11.612903225806452,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN14": {
+        "id": "CAN14",
+        "name": "Curtis Taylor",
+        "type": "pitcher",
+        "whip": 0.6,
+        "k9": 8.709677419354838,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN15": {
+        "id": "CAN15",
+        "name": "Philippe Aumont",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 12.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN16": {
+        "id": "CAN16",
+        "name": "R.J. Freure",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN17": {
+        "id": "CAN17",
+        "name": "Evan Rutckyj",
+        "type": "pitcher",
+        "whip": 2.63,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN18": {
+        "id": "CAN18",
+        "name": "Rob Zastryzny",
+        "type": "pitcher",
+        "whip": 2.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN19": {
+        "id": "CAN19",
+        "name": "Andrew Albers",
+        "type": "pitcher",
+        "whip": 1.2,
+        "k9": 30.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN20": {
+        "id": "CAN20",
+        "name": "Trevor Brigden",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 24.545454545454543,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN21": {
+        "id": "CAN21",
+        "name": "John Axford",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN22": {
+        "id": "CAN22",
+        "name": "Matt Brash",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN23": {
+        "id": "CAN23",
+        "name": "Scott Mathieson",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN24": {
+        "id": "CAN24",
+        "name": "Cade Smith",
+        "type": "pitcher",
+        "whip": 4.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN25": {
+        "id": "CAN25",
+        "name": "Adam Loewen",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN26": {
+        "id": "CAN26",
+        "name": "Cal Quantrill",
+        "type": "pitcher",
+        "whip": 9.0,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN27": {
+        "id": "CAN27",
+        "name": "Mitch Bratt",
+        "type": "pitcher",
+        "whip": 18.0,
+        "k9": 270.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CAN28": {
+        "id": "CAN28",
+        "name": "Ben Onyshko",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL1": {
+        "id": "COL1",
+        "name": "Evan Mendoza",
+        "type": "batter",
+        "ops": 2.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL2": {
+        "id": "COL2",
+        "name": "Dilson Herrera",
+        "type": "batter",
+        "ops": 1.25,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL3": {
+        "id": "COL3",
+        "name": "Reynaldo Rodriguez",
+        "type": "batter",
+        "ops": 0.876,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL4": {
+        "id": "COL4",
+        "name": "Óscar Mercado",
+        "type": "batter",
+        "ops": 0.785,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL5": {
+        "id": "COL5",
+        "name": "Jorge Alfaro",
+        "type": "batter",
+        "ops": 0.713,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL6": {
+        "id": "COL6",
+        "name": "Elias Díaz",
+        "type": "batter",
+        "ops": 0.625,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL7": {
+        "id": "COL7",
+        "name": "Fabian Pertuz",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL8": {
+        "id": "COL8",
+        "name": "Dayan Frias",
+        "type": "batter",
+        "ops": 0.462,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL9": {
+        "id": "COL9",
+        "name": "Meibrys Viloria",
+        "type": "batter",
+        "ops": 0.425,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL10": {
+        "id": "COL10",
+        "name": "Gustavo Campero",
+        "type": "batter",
+        "ops": 0.396,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL11": {
+        "id": "COL11",
+        "name": "Harold Ramírez",
+        "type": "batter",
+        "ops": 0.321,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL12": {
+        "id": "COL12",
+        "name": "Jesus Marriega",
+        "type": "batter",
+        "ops": 0.25,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL13": {
+        "id": "COL13",
+        "name": "Gio Urshela",
+        "type": "batter",
+        "ops": 0.118,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL14": {
+        "id": "COL14",
+        "name": "Jordan Díaz",
+        "type": "batter",
+        "ops": 0.091,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL15": {
+        "id": "COL15",
+        "name": "Adrián Sanchez",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "COL16": {
+        "id": "COL16",
+        "name": "Nabil Crismatt",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 6.75,
+        "history_era": [
+            0
+        ]
+    },
+    "COL17": {
+        "id": "COL17",
+        "name": "Adrian Almeida",
+        "type": "pitcher",
+        "whip": 1.09,
+        "k9": 2.8125,
+        "history_era": [
+            0
+        ]
+    },
+    "COL18": {
+        "id": "COL18",
+        "name": "Yapson Gomez",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 8.709677419354838,
+        "history_era": [
+            0
+        ]
+    },
+    "COL19": {
+        "id": "COL19",
+        "name": "William Cuevas",
+        "type": "pitcher",
+        "whip": 1.67,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL20": {
+        "id": "COL20",
+        "name": "Pedro Garcia",
+        "type": "pitcher",
+        "whip": 1.67,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL21": {
+        "id": "COL21",
+        "name": "Guillo Zuñiga",
+        "type": "pitcher",
+        "whip": 0.67,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL22": {
+        "id": "COL22",
+        "name": "Jasier Herrera",
+        "type": "pitcher",
+        "whip": 1.71,
+        "k9": 4.285714285714286,
+        "history_era": [
+            0
+        ]
+    },
+    "COL23": {
+        "id": "COL23",
+        "name": "Jhon Romero",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "COL24": {
+        "id": "COL24",
+        "name": "Ruben Galindo",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "COL25": {
+        "id": "COL25",
+        "name": "Reiver Sanmartin",
+        "type": "pitcher",
+        "whip": 2.5,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL26": {
+        "id": "COL26",
+        "name": "Julio Vivas",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "COL27": {
+        "id": "COL27",
+        "name": "Luis De Avila",
+        "type": "pitcher",
+        "whip": 1.2,
+        "k9": 15.0,
+        "history_era": [
+            0
+        ]
+    },
+    "COL28": {
+        "id": "COL28",
+        "name": "Rio Gomez",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "COL29": {
+        "id": "COL29",
+        "name": "Carlos Ocampo",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "COL30": {
+        "id": "COL30",
+        "name": "Santiago Florez",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB1": {
+        "id": "CUB1",
+        "name": "Yoan Moncada",
+        "type": "batter",
+        "ops": 1.258,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB2": {
+        "id": "CUB2",
+        "name": "Yurisbel Gracial",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB3": {
+        "id": "CUB3",
+        "name": "Andrys Perez",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB4": {
+        "id": "CUB4",
+        "name": "Yadir Drake",
+        "type": "batter",
+        "ops": 0.934,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB5": {
+        "id": "CUB5",
+        "name": "Erisbel Arruebarrena",
+        "type": "batter",
+        "ops": 0.917,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB6": {
+        "id": "CUB6",
+        "name": "Yadil Mujica",
+        "type": "batter",
+        "ops": 0.908,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB7": {
+        "id": "CUB7",
+        "name": "Roel Santos",
+        "type": "batter",
+        "ops": 0.848,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB8": {
+        "id": "CUB8",
+        "name": "Yoelkis Guibert",
+        "type": "batter",
+        "ops": 0.844,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB9": {
+        "id": "CUB9",
+        "name": "Alfredo Despaigne",
+        "type": "batter",
+        "ops": 0.824,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB10": {
+        "id": "CUB10",
+        "name": "Luis Robert",
+        "type": "batter",
+        "ops": 0.582,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB11": {
+        "id": "CUB11",
+        "name": "Dayan Garcia",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB12": {
+        "id": "CUB12",
+        "name": "Andy Ibáñez",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB13": {
+        "id": "CUB13",
+        "name": "Lorenzo Quintana",
+        "type": "batter",
+        "ops": 0.347,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB14": {
+        "id": "CUB14",
+        "name": "Ariel Martinez",
+        "type": "batter",
+        "ops": 0.297,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB15": {
+        "id": "CUB15",
+        "name": "Yoenis Cespedes",
+        "type": "batter",
+        "ops": 0.25,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB16": {
+        "id": "CUB16",
+        "name": "Luis Mateo",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CUB17": {
+        "id": "CUB17",
+        "name": "Roenis Elias",
+        "type": "pitcher",
+        "whip": 1.11,
+        "k9": 4.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB18": {
+        "id": "CUB18",
+        "name": "Luis Romero",
+        "type": "pitcher",
+        "whip": 0.92,
+        "k9": 14.26829268292683,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB19": {
+        "id": "CUB19",
+        "name": "Yariel Rodriguez",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 12.67605633802817,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB20": {
+        "id": "CUB20",
+        "name": "Livan Moinelo",
+        "type": "pitcher",
+        "whip": 1.15,
+        "k9": 10.975609756097562,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB21": {
+        "id": "CUB21",
+        "name": "Raidel Martinez",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 2.25,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB22": {
+        "id": "CUB22",
+        "name": "Carlos Viera",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 11.25,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB23": {
+        "id": "CUB23",
+        "name": "Onelki Garcia",
+        "type": "pitcher",
+        "whip": 1.36,
+        "k9": 8.4375,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB24": {
+        "id": "CUB24",
+        "name": "Eilan Leyva",
+        "type": "pitcher",
+        "whip": 1.91,
+        "k9": 8.4375,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB25": {
+        "id": "CUB25",
+        "name": "Frank Alvarez",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB26": {
+        "id": "CUB26",
+        "name": "Jose Rodriguez",
+        "type": "pitcher",
+        "whip": 1.71,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB27": {
+        "id": "CUB27",
+        "name": "Ronald Bolaños",
+        "type": "pitcher",
+        "whip": 4.8,
+        "k9": 22.5,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB28": {
+        "id": "CUB28",
+        "name": "Yeudis Reyes",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CUB29": {
+        "id": "CUB29",
+        "name": "Naykel Cruz",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE1": {
+        "id": "CZE1",
+        "name": "Matej Mensik",
+        "type": "batter",
+        "ops": 0.948,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE2": {
+        "id": "CZE2",
+        "name": "Marek Chlup",
+        "type": "batter",
+        "ops": 0.888,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE3": {
+        "id": "CZE3",
+        "name": "Eric Sogard",
+        "type": "batter",
+        "ops": 0.876,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE4": {
+        "id": "CZE4",
+        "name": "Filip Smola",
+        "type": "batter",
+        "ops": 0.606,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE5": {
+        "id": "CZE5",
+        "name": "Vojtech Mensik",
+        "type": "batter",
+        "ops": 0.583,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE6": {
+        "id": "CZE6",
+        "name": "Martin Muzik",
+        "type": "batter",
+        "ops": 0.545,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE7": {
+        "id": "CZE7",
+        "name": "Petr Zýma",
+        "type": "batter",
+        "ops": 0.523,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE8": {
+        "id": "CZE8",
+        "name": "Jakub Hajtmar",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE9": {
+        "id": "CZE9",
+        "name": "William Escala",
+        "type": "batter",
+        "ops": 0.308,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE10": {
+        "id": "CZE10",
+        "name": "Martin Cervenka",
+        "type": "batter",
+        "ops": 0.258,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE11": {
+        "id": "CZE11",
+        "name": "Jakub Grepl",
+        "type": "batter",
+        "ops": 0.25,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE12": {
+        "id": "CZE12",
+        "name": "Arnost Dubovy",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE13": {
+        "id": "CZE13",
+        "name": "Marek Krejcirik",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE14": {
+        "id": "CZE14",
+        "name": "Jakub Kubica",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE15": {
+        "id": "CZE15",
+        "name": "Milan Prokop",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE16": {
+        "id": "CZE16",
+        "name": "Daniel Vavruša",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "CZE17": {
+        "id": "CZE17",
+        "name": "Martin Schneider",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 5.142857142857142,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE18": {
+        "id": "CZE18",
+        "name": "Jeff Barto",
+        "type": "pitcher",
+        "whip": 0.35,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE19": {
+        "id": "CZE19",
+        "name": "Marek Minarik",
+        "type": "pitcher",
+        "whip": 1.38,
+        "k9": 4.390243902439025,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE20": {
+        "id": "CZE20",
+        "name": "Daniel Padysak",
+        "type": "pitcher",
+        "whip": 1.25,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE21": {
+        "id": "CZE21",
+        "name": "Ondrej Satoria",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE22": {
+        "id": "CZE22",
+        "name": "Jan Tomek",
+        "type": "pitcher",
+        "whip": 1.13,
+        "k9": 4.090909090909091,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE23": {
+        "id": "CZE23",
+        "name": "Tomas Duffek",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE24": {
+        "id": "CZE24",
+        "name": "Michal Kovala",
+        "type": "pitcher",
+        "whip": 4.8,
+        "k9": 30.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE25": {
+        "id": "CZE25",
+        "name": "Lukas Ercoli",
+        "type": "pitcher",
+        "whip": 7.5,
+        "k9": 16.363636363636363,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE26": {
+        "id": "CZE26",
+        "name": "Jan Novak",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE27": {
+        "id": "CZE27",
+        "name": "Jake Rabinowitz",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE28": {
+        "id": "CZE28",
+        "name": "Lukas Hloucho",
+        "type": "pitcher",
+        "whip": 15.0,
+        "k9": 180.0,
+        "history_era": [
+            0
+        ]
+    },
+    "CZE29": {
+        "id": "CZE29",
+        "name": "Filip Capka",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM1": {
+        "id": "DOM1",
+        "name": "Nelson Cruz",
+        "type": "batter",
+        "ops": 2.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM2": {
+        "id": "DOM2",
+        "name": "Jean Segura",
+        "type": "batter",
+        "ops": 1.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM3": {
+        "id": "DOM3",
+        "name": "Juan Soto",
+        "type": "batter",
+        "ops": 1.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM4": {
+        "id": "DOM4",
+        "name": "Jeimer Candelario",
+        "type": "batter",
+        "ops": 1.154,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM5": {
+        "id": "DOM5",
+        "name": "Willy Adames",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM6": {
+        "id": "DOM6",
+        "name": "Robinson Canó",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM7": {
+        "id": "DOM7",
+        "name": "Eloy Jiménez",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM8": {
+        "id": "DOM8",
+        "name": "Manny Machado",
+        "type": "batter",
+        "ops": 0.925,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM9": {
+        "id": "DOM9",
+        "name": "Jeremy Peña",
+        "type": "batter",
+        "ops": 0.708,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM10": {
+        "id": "DOM10",
+        "name": "Julio Rodríguez",
+        "type": "batter",
+        "ops": 0.649,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM11": {
+        "id": "DOM11",
+        "name": "Wander Franco",
+        "type": "batter",
+        "ops": 0.639,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM12": {
+        "id": "DOM12",
+        "name": "Ketel Marte",
+        "type": "batter",
+        "ops": 0.625,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM13": {
+        "id": "DOM13",
+        "name": "Francisco Mejía",
+        "type": "batter",
+        "ops": 0.393,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM14": {
+        "id": "DOM14",
+        "name": "Rafael Devers",
+        "type": "batter",
+        "ops": 0.347,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM15": {
+        "id": "DOM15",
+        "name": "Teoscar Hernández",
+        "type": "batter",
+        "ops": 0.286,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM16": {
+        "id": "DOM16",
+        "name": "Gary Sánchez",
+        "type": "batter",
+        "ops": 0.167,
+        "history_ops": [
+            0
+        ]
+    },
+    "DOM17": {
+        "id": "DOM17",
+        "name": "Cristian Javier",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM18": {
+        "id": "DOM18",
+        "name": "Sandy Alcantara",
+        "type": "pitcher",
+        "whip": 2.18,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM19": {
+        "id": "DOM19",
+        "name": "Diego Castillo",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM20": {
+        "id": "DOM20",
+        "name": "Roansy Contreras",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM21": {
+        "id": "DOM21",
+        "name": "Camilo Doval",
+        "type": "pitcher",
+        "whip": 0.43,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM22": {
+        "id": "DOM22",
+        "name": "Luis García",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 4.285714285714286,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM23": {
+        "id": "DOM23",
+        "name": "Héctor Neris",
+        "type": "pitcher",
+        "whip": 0.43,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM24": {
+        "id": "DOM24",
+        "name": "Bryan Abreu",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM25": {
+        "id": "DOM25",
+        "name": "Johnny Cueto",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM26": {
+        "id": "DOM26",
+        "name": "Yimi García",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM27": {
+        "id": "DOM27",
+        "name": "Rafael Montero",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM28": {
+        "id": "DOM28",
+        "name": "Luis Ortiz",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM29": {
+        "id": "DOM29",
+        "name": "César Valdez",
+        "type": "pitcher",
+        "whip": 3.6,
+        "k9": 22.5,
+        "history_era": [
+            0
+        ]
+    },
+    "DOM30": {
+        "id": "DOM30",
+        "name": "Génesis Cabrera",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR1": {
+        "id": "GBR1",
+        "name": "Harry Ford",
+        "type": "batter",
+        "ops": 1.246,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR2": {
+        "id": "GBR2",
+        "name": "Jaden Rudd",
+        "type": "batter",
+        "ops": 1.1,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR3": {
+        "id": "GBR3",
+        "name": "Darnell Sweeney",
+        "type": "batter",
+        "ops": 1.078,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR4": {
+        "id": "GBR4",
+        "name": "D’Shawn Knowles",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR5": {
+        "id": "GBR5",
+        "name": "Chavez Young",
+        "type": "batter",
+        "ops": 0.853,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR6": {
+        "id": "GBR6",
+        "name": "Trayce Thompson",
+        "type": "batter",
+        "ops": 0.85,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR7": {
+        "id": "GBR7",
+        "name": "BJ Murray",
+        "type": "batter",
+        "ops": 0.698,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR8": {
+        "id": "GBR8",
+        "name": "Nick Ward",
+        "type": "batter",
+        "ops": 0.564,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR9": {
+        "id": "GBR9",
+        "name": "Anfernee Seymour",
+        "type": "batter",
+        "ops": 0.308,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR10": {
+        "id": "GBR10",
+        "name": "Matt Koperniak",
+        "type": "batter",
+        "ops": 0.2,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR11": {
+        "id": "GBR11",
+        "name": "Alex Crosby",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR12": {
+        "id": "GBR12",
+        "name": "Ural Forbes",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR13": {
+        "id": "GBR13",
+        "name": "Justin Wylie",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "GBR14": {
+        "id": "GBR14",
+        "name": "Ryan Long",
+        "type": "pitcher",
+        "whip": 1.25,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR15": {
+        "id": "GBR15",
+        "name": "Tyler Viza",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR16": {
+        "id": "GBR16",
+        "name": "Daniel Cooper",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 4.090909090909091,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR17": {
+        "id": "GBR17",
+        "name": "Graham Spraker",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR18": {
+        "id": "GBR18",
+        "name": "Vance Worley",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR19": {
+        "id": "GBR19",
+        "name": "Joseph King",
+        "type": "pitcher",
+        "whip": 2.57,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR20": {
+        "id": "GBR20",
+        "name": "Andre Scrubb",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 8.571428571428571,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR21": {
+        "id": "GBR21",
+        "name": "Donovan Benoit",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR22": {
+        "id": "GBR22",
+        "name": "Ian Gibaut",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR23": {
+        "id": "GBR23",
+        "name": "Alex Webb",
+        "type": "pitcher",
+        "whip": 3.5,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR24": {
+        "id": "GBR24",
+        "name": "Chavez Fernandez",
+        "type": "pitcher",
+        "whip": 4.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR25": {
+        "id": "GBR25",
+        "name": "Cam Opp",
+        "type": "pitcher",
+        "whip": 5.0,
+        "k9": 27.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR26": {
+        "id": "GBR26",
+        "name": "Jake Esch",
+        "type": "pitcher",
+        "whip": 4.5,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR27": {
+        "id": "GBR27",
+        "name": "Axeel Morris",
+        "type": "pitcher",
+        "whip": 9.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR28": {
+        "id": "GBR28",
+        "name": "McKenzie Mills",
+        "type": "pitcher",
+        "whip": 12.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "GBR29": {
+        "id": "GBR29",
+        "name": "Tahnaj Thomas",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR1": {
+        "id": "ISR1",
+        "name": "Garrett Stubbs",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR2": {
+        "id": "ISR2",
+        "name": "Michael Wielansky",
+        "type": "batter",
+        "ops": 0.8,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR3": {
+        "id": "ISR3",
+        "name": "Noah Mendlinger",
+        "type": "batter",
+        "ops": 0.717,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR4": {
+        "id": "ISR4",
+        "name": "Jakob Goldfarb",
+        "type": "batter",
+        "ops": 0.65,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR5": {
+        "id": "ISR5",
+        "name": "Alex Dickerson",
+        "type": "batter",
+        "ops": 0.561,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR6": {
+        "id": "ISR6",
+        "name": "Spencer Horwitz",
+        "type": "batter",
+        "ops": 0.432,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR7": {
+        "id": "ISR7",
+        "name": "Joc Pederson",
+        "type": "batter",
+        "ops": 0.422,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR8": {
+        "id": "ISR8",
+        "name": "Ryan Lavarnway",
+        "type": "batter",
+        "ops": 0.384,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR9": {
+        "id": "ISR9",
+        "name": "Matt Mervis",
+        "type": "batter",
+        "ops": 0.22,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR10": {
+        "id": "ISR10",
+        "name": "Danny Valencia",
+        "type": "batter",
+        "ops": 0.2,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR11": {
+        "id": "ISR11",
+        "name": "Ty Kelly",
+        "type": "batter",
+        "ops": 0.143,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR12": {
+        "id": "ISR12",
+        "name": "Zack Gelof",
+        "type": "batter",
+        "ops": 0.071,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR13": {
+        "id": "ISR13",
+        "name": "C.J. Stubbs",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "ISR14": {
+        "id": "ISR14",
+        "name": "Dean Kremer",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR15": {
+        "id": "ISR15",
+        "name": "Robert Stock",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR16": {
+        "id": "ISR16",
+        "name": "Brandon Gold",
+        "type": "pitcher",
+        "whip": 0.56,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR17": {
+        "id": "ISR17",
+        "name": "Zack Weiss",
+        "type": "pitcher",
+        "whip": 0.9,
+        "k9": 5.806451612903226,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR18": {
+        "id": "ISR18",
+        "name": "Richard Bleier",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR19": {
+        "id": "ISR19",
+        "name": "Bubby Rossman",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR20": {
+        "id": "ISR20",
+        "name": "Josh Wolf",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR21": {
+        "id": "ISR21",
+        "name": "Jacob Steinmetz",
+        "type": "pitcher",
+        "whip": 2.4,
+        "k9": 22.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR22": {
+        "id": "ISR22",
+        "name": "Rob Kaminsky",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR23": {
+        "id": "ISR23",
+        "name": "Joey Wagman",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 24.545454545454543,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR24": {
+        "id": "ISR24",
+        "name": "Daniel Federman",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR25": {
+        "id": "ISR25",
+        "name": "Jake Fishman",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR26": {
+        "id": "ISR26",
+        "name": "Colton Gordon",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR27": {
+        "id": "ISR27",
+        "name": "Andrew Gross",
+        "type": "pitcher",
+        "whip": 4.5,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR28": {
+        "id": "ISR28",
+        "name": "Alex Katz",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR29": {
+        "id": "ISR29",
+        "name": "Evan Kravetz",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR30": {
+        "id": "ISR30",
+        "name": "Kyle Molnar",
+        "type": "pitcher",
+        "whip": 9.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ISR31": {
+        "id": "ISR31",
+        "name": "Jack Weinberger",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA1": {
+        "id": "ITA1",
+        "name": "Alberto Mineo",
+        "type": "batter",
+        "ops": 2.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA2": {
+        "id": "ITA2",
+        "name": "Nicky Lopez",
+        "type": "batter",
+        "ops": 1.156,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA3": {
+        "id": "ITA3",
+        "name": "Dominic Fletcher",
+        "type": "batter",
+        "ops": 1.11,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA4": {
+        "id": "ITA4",
+        "name": "Brett Sullivan",
+        "type": "batter",
+        "ops": 0.777,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA5": {
+        "id": "ITA5",
+        "name": "Sal Frelick",
+        "type": "batter",
+        "ops": 0.768,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA6": {
+        "id": "ITA6",
+        "name": "Miles Mastrobuoni",
+        "type": "batter",
+        "ops": 0.705,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA7": {
+        "id": "ITA7",
+        "name": "Vito Friscia",
+        "type": "batter",
+        "ops": 0.545,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA8": {
+        "id": "ITA8",
+        "name": "David Fletcher",
+        "type": "batter",
+        "ops": 0.488,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA9": {
+        "id": "ITA9",
+        "name": "Vinnie Pasquantino",
+        "type": "batter",
+        "ops": 0.473,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA10": {
+        "id": "ITA10",
+        "name": "Ben DeLuzio",
+        "type": "batter",
+        "ops": 0.426,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA11": {
+        "id": "ITA11",
+        "name": "John Valente",
+        "type": "batter",
+        "ops": 0.286,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA12": {
+        "id": "ITA12",
+        "name": "Robel García",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA13": {
+        "id": "ITA13",
+        "name": "Dominic Miroglio",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "ITA14": {
+        "id": "ITA14",
+        "name": "Matt Harvey",
+        "type": "pitcher",
+        "whip": 0.71,
+        "k9": 3.8571428571428568,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA15": {
+        "id": "ITA15",
+        "name": "Ryan Castellani",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA16": {
+        "id": "ITA16",
+        "name": "Matt Festa",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA17": {
+        "id": "ITA17",
+        "name": "Andre Pallante",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA18": {
+        "id": "ITA18",
+        "name": "Michele Vassalotti",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA19": {
+        "id": "ITA19",
+        "name": "Stephen Woods",
+        "type": "pitcher",
+        "whip": 1.25,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA20": {
+        "id": "ITA20",
+        "name": "Vinny Nittoli",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA21": {
+        "id": "ITA21",
+        "name": "Sam Gaviglio",
+        "type": "pitcher",
+        "whip": 1.33,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA22": {
+        "id": "ITA22",
+        "name": "Mitchell Stumpo",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA23": {
+        "id": "ITA23",
+        "name": "Joe La Sorsa",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA24": {
+        "id": "ITA24",
+        "name": "Joey Marciano",
+        "type": "pitcher",
+        "whip": 4.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA25": {
+        "id": "ITA25",
+        "name": "Glenn Albanese",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA26": {
+        "id": "ITA26",
+        "name": "Matteo Bocchi",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA27": {
+        "id": "ITA27",
+        "name": "Claudio Scotti",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "ITA28": {
+        "id": "ITA28",
+        "name": "Joe Biagini",
+        "type": "pitcher",
+        "whip": 12.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN1": {
+        "id": "JPN1",
+        "name": "Yushei Nakamura",
+        "type": "batter",
+        "ops": 1.35,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN2": {
+        "id": "JPN2",
+        "name": "Shohei Ohtani",
+        "type": "batter",
+        "ops": 1.345,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN3": {
+        "id": "JPN3",
+        "name": "Kazuma Okamoto",
+        "type": "batter",
+        "ops": 1.278,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN4": {
+        "id": "JPN4",
+        "name": "Masataka Yoshida",
+        "type": "batter",
+        "ops": 1.252,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN5": {
+        "id": "JPN5",
+        "name": "Kensuke Kondoh",
+        "type": "batter",
+        "ops": 1.11,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN6": {
+        "id": "JPN6",
+        "name": "Taisei Makihara",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN7": {
+        "id": "JPN7",
+        "name": "Takumu Nakano",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN8": {
+        "id": "JPN8",
+        "name": "Shugo Maki",
+        "type": "batter",
+        "ops": 0.85,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN9": {
+        "id": "JPN9",
+        "name": "Munetaka Murakami",
+        "type": "batter",
+        "ops": 0.826,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN10": {
+        "id": "JPN10",
+        "name": "Sosuke Genda",
+        "type": "batter",
+        "ops": 0.721,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN11": {
+        "id": "JPN11",
+        "name": "Tetsuto Yamada",
+        "type": "batter",
+        "ops": 0.717,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN12": {
+        "id": "JPN12",
+        "name": "Lars Nootbaar",
+        "type": "batter",
+        "ops": 0.693,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN13": {
+        "id": "JPN13",
+        "name": "Takuya Kai",
+        "type": "batter",
+        "ops": 0.466,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN14": {
+        "id": "JPN14",
+        "name": "Hotaka Yamakawa",
+        "type": "batter",
+        "ops": 0.343,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN15": {
+        "id": "JPN15",
+        "name": "Takumi Ohsihro",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN16": {
+        "id": "JPN16",
+        "name": "Ukyo Shuto",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "JPN17": {
+        "id": "JPN17",
         "name": "Shohei Ohtani",
         "type": "pitcher",
-        "whip": 0.95,
-        "k9": 12.5,
-        "history_era": [3.2, 2.8, 2.5]
+        "whip": 0.72,
+        "k9": 10.760869565217392,
+        "history_era": [
+            0
+        ]
     },
-    "j2": {
-        "id": "j2",
+    "JPN18": {
+        "id": "JPN18",
+        "name": "Roki Sasaki",
+        "type": "pitcher",
+        "whip": 1.21,
+        "k9": 13.943661971830988,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN19": {
+        "id": "JPN19",
         "name": "Yoshinobu Yamamoto",
         "type": "pitcher",
-        "whip": 1.02,
-        "k9": 11.1,
-        "history_era": [1.8, 1.9, 1.7]
+        "whip": 0.82,
+        "k9": 15.211267605633804,
+        "history_era": [
+            0
+        ]
     },
-    "t1": {
-        "id": "t1",
-        "name": "Wang Po-Jung",
+    "JPN20": {
+        "id": "JPN20",
+        "name": "Yu Darvish",
+        "type": "pitcher",
+        "whip": 1.17,
+        "k9": 10.5,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN21": {
+        "id": "JPN21",
+        "name": "Shota Imanaga",
+        "type": "pitcher",
+        "whip": 1.33,
+        "k9": 10.5,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN22": {
+        "id": "JPN22",
+        "name": "Hiroya Miyagi",
+        "type": "pitcher",
+        "whip": 0.4,
+        "k9": 12.6,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN23": {
+        "id": "JPN23",
+        "name": "Shosei Togo",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN24": {
+        "id": "JPN24",
+        "name": "Taisei Ota",
+        "type": "pitcher",
+        "whip": 1.25,
+        "k9": 6.75,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN25": {
+        "id": "JPN25",
+        "name": "Hiroto Takahashi",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN26": {
+        "id": "JPN26",
+        "name": "Atsuki Yuasa",
+        "type": "pitcher",
+        "whip": 1.13,
+        "k9": 16.363636363636363,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN27": {
+        "id": "JPN27",
+        "name": "Hiromi Itoh",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN28": {
+        "id": "JPN28",
+        "name": "Keiji Takahashi",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN29": {
+        "id": "JPN29",
+        "name": "Yuki Udagawa",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "JPN30": {
+        "id": "JPN30",
+        "name": "Yuki Matsui",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR1": {
+        "id": "KOR1",
+        "name": "Ji Hoon Choi",
         "type": "batter",
-        "ops": 0.820,
-        "history_ops": [0.810, 0.790, 0.820]
+        "ops": 1.467,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR2": {
+        "id": "KOR2",
+        "name": "EuiJi Yang",
+        "type": "batter",
+        "ops": 1.467,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR3": {
+        "id": "KOR3",
+        "name": "Hae-Min Park",
+        "type": "batter",
+        "ops": 1.267,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR4": {
+        "id": "KOR4",
+        "name": "Kunwoo Park",
+        "type": "batter",
+        "ops": 1.225,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR5": {
+        "id": "KOR5",
+        "name": "ByungHo Park",
+        "type": "batter",
+        "ops": 1.207,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR6": {
+        "id": "KOR6",
+        "name": "Ji Young Lee",
+        "type": "batter",
+        "ops": 1.2,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR7": {
+        "id": "KOR7",
+        "name": "Hyeseong Kim",
+        "type": "batter",
+        "ops": 1.167,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR8": {
+        "id": "KOR8",
+        "name": "Baek Ho Kang",
+        "type": "batter",
+        "ops": 1.143,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR9": {
+        "id": "KOR9",
+        "name": "Jung Hoo Lee",
+        "type": "batter",
+        "ops": 1.071,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR10": {
+        "id": "KOR10",
+        "name": "Ha-Seong Kim",
+        "type": "batter",
+        "ops": 1.028,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR11": {
+        "id": "KOR11",
+        "name": "Ji Hwan Oh",
+        "type": "batter",
+        "ops": 0.9,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR12": {
+        "id": "KOR12",
+        "name": "Tommy Edman",
+        "type": "batter",
+        "ops": 0.432,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR13": {
+        "id": "KOR13",
+        "name": "Hyun Soo Kim",
+        "type": "batter",
+        "ops": 0.384,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR14": {
+        "id": "KOR14",
+        "name": "Jeong Choi",
+        "type": "batter",
+        "ops": 0.222,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR15": {
+        "id": "KOR15",
+        "name": "Sung Bum Na",
+        "type": "batter",
+        "ops": 0.167,
+        "history_ops": [
+            0
+        ]
+    },
+    "KOR16": {
+        "id": "KOR16",
+        "name": "Se Woong Park",
+        "type": "pitcher",
+        "whip": 0.17,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR17": {
+        "id": "KOR17",
+        "name": "Young Pyo Ko",
+        "type": "pitcher",
+        "whip": 1.2,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR18": {
+        "id": "KOR18",
+        "name": "Tae In Won",
+        "type": "pitcher",
+        "whip": 1.85,
+        "k9": 6.585365853658537,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR19": {
+        "id": "KOR19",
+        "name": "Hyeong Jun So",
+        "type": "pitcher",
+        "whip": 0.3,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR20": {
+        "id": "KOR20",
+        "name": "Yongchan Lee",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR21": {
+        "id": "KOR21",
+        "name": "Been Gwak",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR22": {
+        "id": "KOR22",
+        "name": "Kwang Hyun Kim",
+        "type": "pitcher",
+        "whip": 2.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR23": {
+        "id": "KOR23",
+        "name": "Won Jung Kim",
+        "type": "pitcher",
+        "whip": 2.4,
+        "k9": 22.5,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR24": {
+        "id": "KOR24",
+        "name": "Cheol Woong Jeong",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR25": {
+        "id": "KOR25",
+        "name": "Chang Mo Koo",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR26": {
+        "id": "KOR26",
+        "name": "Woo Young Jung",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR27": {
+        "id": "KOR27",
+        "name": "Eui Lee Lee",
+        "type": "pitcher",
+        "whip": 9.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR28": {
+        "id": "KOR28",
+        "name": "Yun Sik Kim",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "KOR29": {
+        "id": "KOR29",
+        "name": "Hyeon-Jong Yang",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX1": {
+        "id": "MEX1",
+        "name": "Randy Arozarena",
+        "type": "batter",
+        "ops": 1.507,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX2": {
+        "id": "MEX2",
+        "name": "Alexis Wilson",
+        "type": "batter",
+        "ops": 1.334,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX3": {
+        "id": "MEX3",
+        "name": "Jose Cardona",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX4": {
+        "id": "MEX4",
+        "name": "Roberto Valenzuela",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX5": {
+        "id": "MEX5",
+        "name": "Joey Meneses",
+        "type": "batter",
+        "ops": 0.963,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX6": {
+        "id": "MEX6",
+        "name": "Isaac Paredes",
+        "type": "batter",
+        "ops": 0.945,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX7": {
+        "id": "MEX7",
+        "name": "Luis Urias",
+        "type": "batter",
+        "ops": 0.825,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX8": {
+        "id": "MEX8",
+        "name": "Austin Barnes",
+        "type": "batter",
+        "ops": 0.798,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX9": {
+        "id": "MEX9",
+        "name": "Rowdy Tellez",
+        "type": "batter",
+        "ops": 0.773,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX10": {
+        "id": "MEX10",
+        "name": "Alek Thomas",
+        "type": "batter",
+        "ops": 0.473,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX11": {
+        "id": "MEX11",
+        "name": "Alan Trejo",
+        "type": "batter",
+        "ops": 0.442,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX12": {
+        "id": "MEX12",
+        "name": "Alex Verdugo",
+        "type": "batter",
+        "ops": 0.396,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX13": {
+        "id": "MEX13",
+        "name": "Jonathan Aranda",
+        "type": "batter",
+        "ops": 0.343,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX14": {
+        "id": "MEX14",
+        "name": "Jarren Duran",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "MEX15": {
+        "id": "MEX15",
+        "name": "Julio Urias",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 10.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX16": {
+        "id": "MEX16",
+        "name": "Patrick Sandoval",
+        "type": "pitcher",
+        "whip": 1.23,
+        "k9": 10.140845070422536,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX17": {
+        "id": "MEX17",
+        "name": "José Urquidy",
+        "type": "pitcher",
+        "whip": 1.89,
+        "k9": 10.327868852459018,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX18": {
+        "id": "MEX18",
+        "name": "Javier Assad",
+        "type": "pitcher",
+        "whip": 0.53,
+        "k9": 10.384615384615383,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX19": {
+        "id": "MEX19",
+        "name": "Taijuan Walker",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX20": {
+        "id": "MEX20",
+        "name": "JoJo Romero",
+        "type": "pitcher",
+        "whip": 2.1,
+        "k9": 8.709677419354838,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX21": {
+        "id": "MEX21",
+        "name": "Giovanny Gallegos",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 12.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX22": {
+        "id": "MEX22",
+        "name": "Jesús Cruz",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX23": {
+        "id": "MEX23",
+        "name": "Jake Sanchez",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX24": {
+        "id": "MEX24",
+        "name": "Adrián Martinez",
+        "type": "pitcher",
+        "whip": 0.43,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX25": {
+        "id": "MEX25",
+        "name": "Gerardo Reyes",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 4.285714285714286,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX26": {
+        "id": "MEX26",
+        "name": "Luis Cessa",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX27": {
+        "id": "MEX27",
+        "name": "Manny Barreda",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX28": {
+        "id": "MEX28",
+        "name": "César Vargas",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX29": {
+        "id": "MEX29",
+        "name": "Erubiel Armenta",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "MEX30": {
+        "id": "MEX30",
+        "name": "Samuel Zazueta",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA1": {
+        "id": "NCA1",
+        "name": "Benjamin Alegria",
+        "type": "batter",
+        "ops": 1.167,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA2": {
+        "id": "NCA2",
+        "name": "Rodolfo Bone",
+        "type": "batter",
+        "ops": 0.833,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA3": {
+        "id": "NCA3",
+        "name": "Elian Miranda",
+        "type": "batter",
+        "ops": 0.705,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA4": {
+        "id": "NCA4",
+        "name": "Juan Montes",
+        "type": "batter",
+        "ops": 0.69,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA5": {
+        "id": "NCA5",
+        "name": "Milkar Perez",
+        "type": "batter",
+        "ops": 0.65,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA6": {
+        "id": "NCA6",
+        "name": "Norlando Valle",
+        "type": "batter",
+        "ops": 0.546,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA7": {
+        "id": "NCA7",
+        "name": "Brandon Leyton",
+        "type": "batter",
+        "ops": 0.517,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA8": {
+        "id": "NCA8",
+        "name": "Ivan Marin",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA9": {
+        "id": "NCA9",
+        "name": "Alex Blandino",
+        "type": "batter",
+        "ops": 0.417,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA10": {
+        "id": "NCA10",
+        "name": "Cheslor Cuthbert",
+        "type": "batter",
+        "ops": 0.22,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA11": {
+        "id": "NCA11",
+        "name": "Sandy Bermudez",
+        "type": "batter",
+        "ops": 0.143,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA12": {
+        "id": "NCA12",
+        "name": "Isaac Benard",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA13": {
+        "id": "NCA13",
+        "name": "Dwight Britton",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA14": {
+        "id": "NCA14",
+        "name": "Melvin Novoa",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA15": {
+        "id": "NCA15",
+        "name": "Wuilians Vasquez",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NCA16": {
+        "id": "NCA16",
+        "name": "Carlos Rodriguez",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 2.25,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA17": {
+        "id": "NCA17",
+        "name": "Erasmo Ramírez",
+        "type": "pitcher",
+        "whip": 1.09,
+        "k9": 8.4375,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA18": {
+        "id": "NCA18",
+        "name": "Junior Tellez",
+        "type": "pitcher",
+        "whip": 1.36,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA19": {
+        "id": "NCA19",
+        "name": "Leo Crawford",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA20": {
+        "id": "NCA20",
+        "name": "JC Ramírez",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 6.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA21": {
+        "id": "NCA21",
+        "name": "Carlos Teller",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 4.090909090909091,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA22": {
+        "id": "NCA22",
+        "name": "Joaquin Acuna",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA23": {
+        "id": "NCA23",
+        "name": "Fidencio Flores",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA24": {
+        "id": "NCA24",
+        "name": "Jonathan Loáisiga",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA25": {
+        "id": "NCA25",
+        "name": "Ronald Medrano",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA26": {
+        "id": "NCA26",
+        "name": "Osman Gutierrez",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA27": {
+        "id": "NCA27",
+        "name": "Kevin Gadea",
+        "type": "pitcher",
+        "whip": 4.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA28": {
+        "id": "NCA28",
+        "name": "Duque Hebert",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA29": {
+        "id": "NCA29",
+        "name": "Rodney Theophile",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NCA30": {
+        "id": "NCA30",
+        "name": "Dilmer Mejia",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED1": {
+        "id": "NED1",
+        "name": "Ray-Patrick Didder",
+        "type": "batter",
+        "ops": 1.166,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED2": {
+        "id": "NED2",
+        "name": "Jurremi Profar",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED3": {
+        "id": "NED3",
+        "name": "Xander Bogaerts",
+        "type": "batter",
+        "ops": 0.886,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED4": {
+        "id": "NED4",
+        "name": "Jurickson Profar",
+        "type": "batter",
+        "ops": 0.874,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED5": {
+        "id": "NED5",
+        "name": "Wladimir Balentien",
+        "type": "batter",
+        "ops": 0.826,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED6": {
+        "id": "NED6",
+        "name": "Chadwick Tromp",
+        "type": "batter",
+        "ops": 0.786,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED7": {
+        "id": "NED7",
+        "name": "Didi Gregorius",
+        "type": "batter",
+        "ops": 0.688,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED8": {
+        "id": "NED8",
+        "name": "Roger Bernadina",
+        "type": "batter",
+        "ops": 0.542,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED9": {
+        "id": "NED9",
+        "name": "Andrelton Simmons",
+        "type": "batter",
+        "ops": 0.364,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED10": {
+        "id": "NED10",
+        "name": "Jonathan Schoop",
+        "type": "batter",
+        "ops": 0.327,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED11": {
+        "id": "NED11",
+        "name": "Joshua Palacios",
+        "type": "batter",
+        "ops": 0.311,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED12": {
+        "id": "NED12",
+        "name": "Richie Palacios",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED13": {
+        "id": "NED13",
+        "name": "Sharlon Schoop",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "NED14": {
+        "id": "NED14",
+        "name": "Mike Bolsenbroek",
+        "type": "pitcher",
+        "whip": 2.08,
+        "k9": 4.390243902439025,
+        "history_era": [
+            0
+        ]
+    },
+    "NED15": {
+        "id": "NED15",
+        "name": "Kevin Kelly",
+        "type": "pitcher",
+        "whip": 1.85,
+        "k9": 4.390243902439025,
+        "history_era": [
+            0
+        ]
+    },
+    "NED16": {
+        "id": "NED16",
+        "name": "Shairon Martis",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 5.806451612903226,
+        "history_era": [
+            0
+        ]
+    },
+    "NED17": {
+        "id": "NED17",
+        "name": "Tom de Blok",
+        "type": "pitcher",
+        "whip": 1.67,
+        "k9": 12.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED18": {
+        "id": "NED18",
+        "name": "Eric Mendez",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "NED19": {
+        "id": "NED19",
+        "name": "Franklin Van Gurp",
+        "type": "pitcher",
+        "whip": 0.38,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED20": {
+        "id": "NED20",
+        "name": "Derek West",
+        "type": "pitcher",
+        "whip": 1.88,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "NED21": {
+        "id": "NED21",
+        "name": "Jayden Estanista",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "NED22": {
+        "id": "NED22",
+        "name": "Wendell Floranus",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "NED23": {
+        "id": "NED23",
+        "name": "Juan Carlos Sulbaran",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED24": {
+        "id": "NED24",
+        "name": "Ryan Huntington",
+        "type": "pitcher",
+        "whip": 2.4,
+        "k9": 15.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED25": {
+        "id": "NED25",
+        "name": "Lars Huijer",
+        "type": "pitcher",
+        "whip": 4.5,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "NED26": {
+        "id": "NED26",
+        "name": "Arij Fransen",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "NED27": {
+        "id": "NED27",
+        "name": "Antwone Kelly",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN1": {
+        "id": "PAN1",
+        "name": "Ruben Tejada",
+        "type": "batter",
+        "ops": 1.042,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN2": {
+        "id": "PAN2",
+        "name": "Edgar Munoz",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN3": {
+        "id": "PAN3",
+        "name": "Rodrigo Orozco",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN4": {
+        "id": "PAN4",
+        "name": "Jhonny Santos",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN5": {
+        "id": "PAN5",
+        "name": "Erasmo Caballero",
+        "type": "batter",
+        "ops": 0.9,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN6": {
+        "id": "PAN6",
+        "name": "Jose Ramos",
+        "type": "batter",
+        "ops": 0.853,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN7": {
+        "id": "PAN7",
+        "name": "Jahdiel Santamaria",
+        "type": "batter",
+        "ops": 0.819,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN8": {
+        "id": "PAN8",
+        "name": "Jonathan Araúz",
+        "type": "batter",
+        "ops": 0.754,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN9": {
+        "id": "PAN9",
+        "name": "Luis Castillo",
+        "type": "batter",
+        "ops": 0.746,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN10": {
+        "id": "PAN10",
+        "name": "José Caballero",
+        "type": "batter",
+        "ops": 0.639,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN11": {
+        "id": "PAN11",
+        "name": "Allen Córdoba",
+        "type": "batter",
+        "ops": 0.504,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN12": {
+        "id": "PAN12",
+        "name": "Christian Bethancourt",
+        "type": "batter",
+        "ops": 0.462,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN13": {
+        "id": "PAN13",
+        "name": "Gerald Chin",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN14": {
+        "id": "PAN14",
+        "name": "Carlos Sanchez",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN15": {
+        "id": "PAN15",
+        "name": "Joswhan Wright",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PAN16": {
+        "id": "PAN16",
+        "name": "Harold Arauz",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 2.25,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN17": {
+        "id": "PAN17",
+        "name": "Humberto Mejía",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 2.25,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN18": {
+        "id": "PAN18",
+        "name": "Randall Delgado",
+        "type": "pitcher",
+        "whip": 2.7,
+        "k9": 5.806451612903226,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN19": {
+        "id": "PAN19",
+        "name": "Alberto Guerrero",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN20": {
+        "id": "PAN20",
+        "name": "Alberto Baldonado",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN21": {
+        "id": "PAN21",
+        "name": "Andy Otero",
+        "type": "pitcher",
+        "whip": 2.33,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN22": {
+        "id": "PAN22",
+        "name": "Jaime Barria",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN23": {
+        "id": "PAN23",
+        "name": "Severino González",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 8.571428571428571,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN24": {
+        "id": "PAN24",
+        "name": "Matt Hardy",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 4.285714285714286,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN25": {
+        "id": "PAN25",
+        "name": "Justin Lawrence",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN26": {
+        "id": "PAN26",
+        "name": "Wilfredo Pereira",
+        "type": "pitcher",
+        "whip": 4.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN27": {
+        "id": "PAN27",
+        "name": "Javy Guerra",
+        "type": "pitcher",
+        "whip": 2.4,
+        "k9": 7.5,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN28": {
+        "id": "PAN28",
+        "name": "Davis Romero",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 16.363636363636363,
+        "history_era": [
+            0
+        ]
+    },
+    "PAN29": {
+        "id": "PAN29",
+        "name": "James Gonzalez",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR1": {
+        "id": "PUR1",
+        "name": "Javier Baez",
+        "type": "batter",
+        "ops": 1.052,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR2": {
+        "id": "PUR2",
+        "name": "Francisco Lindor",
+        "type": "batter",
+        "ops": 1.042,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR3": {
+        "id": "PUR3",
+        "name": "Christian Vázquez",
+        "type": "batter",
+        "ops": 1.042,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR4": {
+        "id": "PUR4",
+        "name": "Edwin Diaz",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR5": {
+        "id": "PUR5",
+        "name": "Martin Maldonado",
+        "type": "batter",
+        "ops": 0.8,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR6": {
+        "id": "PUR6",
+        "name": "Eddie Rosario",
+        "type": "batter",
+        "ops": 0.799,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR7": {
+        "id": "PUR7",
+        "name": "Enrique Hernández",
+        "type": "batter",
+        "ops": 0.791,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR8": {
+        "id": "PUR8",
+        "name": "Emmanuel Rivera",
+        "type": "batter",
+        "ops": 0.69,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR9": {
+        "id": "PUR9",
+        "name": "MJ Melendez",
+        "type": "batter",
+        "ops": 0.635,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR10": {
+        "id": "PUR10",
+        "name": "Vimael Machín",
+        "type": "batter",
+        "ops": 0.586,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR11": {
+        "id": "PUR11",
+        "name": "Nelson Velázquez",
+        "type": "batter",
+        "ops": 0.533,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR12": {
+        "id": "PUR12",
+        "name": "Netfali Soto",
+        "type": "batter",
+        "ops": 0.182,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR13": {
+        "id": "PUR13",
+        "name": "Johneshwy Fargas",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR14": {
+        "id": "PUR14",
+        "name": "Henry Ramos",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "PUR15": {
+        "id": "PUR15",
+        "name": "Marcus Stroman",
+        "type": "pitcher",
+        "whip": 0.89,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR16": {
+        "id": "PUR16",
+        "name": "José De León",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 17.307692307692307,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR17": {
+        "id": "PUR17",
+        "name": "Fernando Cruz",
+        "type": "pitcher",
+        "whip": 1.64,
+        "k9": 14.0625,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR18": {
+        "id": "PUR18",
+        "name": "Yacksel Rios",
+        "type": "pitcher",
+        "whip": 0.55,
+        "k9": 14.0625,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR19": {
+        "id": "PUR19",
+        "name": "Jorge López",
+        "type": "pitcher",
+        "whip": 0.67,
+        "k9": 12.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR20": {
+        "id": "PUR20",
+        "name": "Duane Underwood",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR21": {
+        "id": "PUR21",
+        "name": "Jovani Moran",
+        "type": "pitcher",
+        "whip": 1.13,
+        "k9": 12.272727272727272,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR22": {
+        "id": "PUR22",
+        "name": "Nicholas Padilla",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 17.142857142857142,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR23": {
+        "id": "PUR23",
+        "name": "Héctor Santiago",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 4.285714285714286,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR24": {
+        "id": "PUR24",
+        "name": "Alexis Díaz",
+        "type": "pitcher",
+        "whip": 3.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR25": {
+        "id": "PUR25",
+        "name": "Edwin Fierro",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR26": {
+        "id": "PUR26",
+        "name": "José Berríos",
+        "type": "pitcher",
+        "whip": 7.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR27": {
+        "id": "PUR27",
+        "name": "Anthony Maldonado",
+        "type": "pitcher",
+        "whip": 2.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR28": {
+        "id": "PUR28",
+        "name": "Emilio Pagán",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR29": {
+        "id": "PUR29",
+        "name": "Michael Petersen",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "PUR30": {
+        "id": "PUR30",
+        "name": "Dereck Rodríguez",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 45.0,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE1": {
+        "id": "TPE1",
+        "name": "Yu Chang",
+        "type": "batter",
+        "ops": 1.438,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE2": {
+        "id": "TPE2",
+        "name": "Kungkuan Giljegiljaw",
+        "type": "batter",
+        "ops": 1.096,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE3": {
+        "id": "TPE3",
+        "name": "Chieh-Hsien Chen",
+        "type": "batter",
+        "ops": 1.081,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE4": {
+        "id": "TPE4",
+        "name": "Li Lin",
+        "type": "batter",
+        "ops": 1.067,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE5": {
+        "id": "TPE5",
+        "name": "Kuo-Chen Fan",
+        "type": "batter",
+        "ops": 1.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE6": {
+        "id": "TPE6",
+        "name": "Nien-Ting Wu",
+        "type": "batter",
+        "ops": 0.977,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE7": {
+        "id": "TPE7",
+        "name": "Tsung-Che Cheng",
+        "type": "batter",
+        "ops": 0.879,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE8": {
+        "id": "TPE8",
+        "name": "Kun-Yu Chiang",
+        "type": "batter",
+        "ops": 0.774,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE9": {
+        "id": "TPE9",
+        "name": "Chin Cheng",
+        "type": "batter",
+        "ops": 0.666,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE10": {
+        "id": "TPE10",
+        "name": "Wei-Chen Wang",
+        "type": "batter",
+        "ops": 0.666,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE11": {
+        "id": "TPE11",
+        "name": "Tzu-Wei Lin",
+        "type": "batter",
+        "ops": 0.521,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE12": {
+        "id": "TPE12",
+        "name": "Chen-Wei Chen",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE13": {
+        "id": "TPE13",
+        "name": "Po-Jung Wang",
+        "type": "batter",
+        "ops": 0.473,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE14": {
+        "id": "TPE14",
+        "name": "Yu-Chieh Kao",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE15": {
+        "id": "TPE15",
+        "name": "Tien-Hsin Kuo",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE16": {
+        "id": "TPE16",
+        "name": "Dai-An Lin",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "TPE17": {
+        "id": "TPE17",
+        "name": "Che-Yuan Wu",
+        "type": "pitcher",
+        "whip": 0.95,
+        "k9": 5.901639344262295,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE18": {
+        "id": "TPE18",
+        "name": "Shao-Ching Chiang",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 2.25,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE19": {
+        "id": "TPE19",
+        "name": "Chia-Hao Sung",
+        "type": "pitcher",
+        "whip": 0.55,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE20": {
+        "id": "TPE20",
+        "name": "Chih-Wei Hu",
+        "type": "pitcher",
+        "whip": 2.67,
+        "k9": 6.0,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE21": {
+        "id": "TPE21",
+        "name": "Wei-Chung Wang",
+        "type": "pitcher",
+        "whip": 2.33,
+        "k9": 3.0,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE22": {
+        "id": "TPE22",
+        "name": "Tzu-Peng Huang",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE23": {
+        "id": "TPE23",
+        "name": "Kuan-Wei Chen",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE24": {
+        "id": "TPE24",
+        "name": "Kuan-Yu Chen",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE25": {
+        "id": "TPE25",
+        "name": "Yu-Hsun Chen",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE26": {
+        "id": "TPE26",
+        "name": "Yen-Ching Lu",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE27": {
+        "id": "TPE27",
+        "name": "C.C. Lee",
+        "type": "pitcher",
+        "whip": 1.8,
+        "k9": 22.5,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE28": {
+        "id": "TPE28",
+        "name": "Shih-Peng Chen",
+        "type": "pitcher",
+        "whip": 3.75,
+        "k9": 16.363636363636363,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE29": {
+        "id": "TPE29",
+        "name": "Jyun-Yue Tseng",
+        "type": "pitcher",
+        "whip": 6.0,
+        "k9": 27.0,
+        "history_era": [
+            0
+        ]
+    },
+    "TPE30": {
+        "id": "TPE30",
+        "name": "Kai-Wei Teng",
+        "type": "pitcher",
+        "whip": 0.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "USA1": {
+        "id": "USA1",
+        "name": "Bobby Witt",
+        "type": "batter",
+        "ops": 1.667,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA2": {
+        "id": "USA2",
+        "name": "Trea Turner",
+        "type": "batter",
+        "ops": 1.483,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA3": {
+        "id": "USA3",
+        "name": "J.T. Realmuto",
+        "type": "batter",
+        "ops": 1.2,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA4": {
+        "id": "USA4",
+        "name": "Kyle Schwarber",
+        "type": "batter",
+        "ops": 1.093,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA5": {
+        "id": "USA5",
+        "name": "Kyle Tucker",
+        "type": "batter",
+        "ops": 1.086,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA6": {
+        "id": "USA6",
+        "name": "Nolan Arenado",
+        "type": "batter",
+        "ops": 1.025,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA7": {
+        "id": "USA7",
+        "name": "Mike Trout",
+        "type": "batter",
+        "ops": 0.948,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA8": {
+        "id": "USA8",
+        "name": "Will Smith",
+        "type": "batter",
+        "ops": 0.933,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA9": {
+        "id": "USA9",
+        "name": "Cedric Mullins",
+        "type": "batter",
+        "ops": 0.9,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA10": {
+        "id": "USA10",
+        "name": "Paul Goldschmidt",
+        "type": "batter",
+        "ops": 0.897,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA11": {
+        "id": "USA11",
+        "name": "Tim Anderson",
+        "type": "batter",
+        "ops": 0.881,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA12": {
+        "id": "USA12",
+        "name": "Mookie Betts",
+        "type": "batter",
+        "ops": 0.686,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA13": {
+        "id": "USA13",
+        "name": "Jeff McNeil",
+        "type": "batter",
+        "ops": 0.496,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA14": {
+        "id": "USA14",
+        "name": "Pete Alonso",
+        "type": "batter",
+        "ops": 0.343,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA15": {
+        "id": "USA15",
+        "name": "Kyle Higashioka",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "USA16": {
+        "id": "USA16",
+        "name": "Lance Lynn",
+        "type": "pitcher",
+        "whip": 0.78,
+        "k9": 10.0,
+        "history_era": [
+            0
+        ]
+    },
+    "USA17": {
+        "id": "USA17",
+        "name": "Adam Wainwright",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "USA18": {
+        "id": "USA18",
+        "name": "Kyle Freeland",
+        "type": "pitcher",
+        "whip": 0.83,
+        "k9": 10.5,
+        "history_era": [
+            0
+        ]
+    },
+    "USA19": {
+        "id": "USA19",
+        "name": "Miles Mikolas",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 7.5,
+        "history_era": [
+            0
+        ]
+    },
+    "USA20": {
+        "id": "USA20",
+        "name": "Merrill Kelly",
+        "type": "pitcher",
+        "whip": 2.54,
+        "k9": 4.390243902439025,
+        "history_era": [
+            0
+        ]
+    },
+    "USA21": {
+        "id": "USA21",
+        "name": "Jason Adam",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 6.75,
+        "history_era": [
+            0
+        ]
+    },
+    "USA22": {
+        "id": "USA22",
+        "name": "David Bednar",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 11.25,
+        "history_era": [
+            0
+        ]
+    },
+    "USA23": {
+        "id": "USA23",
+        "name": "Devin Williams",
+        "type": "pitcher",
+        "whip": 0.6,
+        "k9": 2.903225806451613,
+        "history_era": [
+            0
+        ]
+    },
+    "USA24": {
+        "id": "USA24",
+        "name": "Ryan Pressly",
+        "type": "pitcher",
+        "whip": 0.33,
+        "k9": 6.0,
+        "history_era": [
+            0
+        ]
+    },
+    "USA25": {
+        "id": "USA25",
+        "name": "Aaron Loup",
+        "type": "pitcher",
+        "whip": 1.13,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "USA26": {
+        "id": "USA26",
+        "name": "Nick Martinez",
+        "type": "pitcher",
+        "whip": 2.25,
+        "k9": 16.363636363636363,
+        "history_era": [
+            0
+        ]
+    },
+    "USA27": {
+        "id": "USA27",
+        "name": "Adam Ottavino",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "USA28": {
+        "id": "USA28",
+        "name": "Brady Singer",
+        "type": "pitcher",
+        "whip": 2.5,
+        "k9": 4.5,
+        "history_era": [
+            0
+        ]
+    },
+    "USA29": {
+        "id": "USA29",
+        "name": "Daniel Bard",
+        "type": "pitcher",
+        "whip": 5.4,
+        "k9": 7.5,
+        "history_era": [
+            0
+        ]
+    },
+    "USA30": {
+        "id": "USA30",
+        "name": "Kendall Graveman",
+        "type": "pitcher",
+        "whip": 0.75,
+        "k9": 8.181818181818182,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN1": {
+        "id": "VEN1",
+        "name": "Robinson Chirinos",
+        "type": "batter",
+        "ops": 3.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN2": {
+        "id": "VEN2",
+        "name": "Salvador Perez",
+        "type": "batter",
+        "ops": 1.396,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN3": {
+        "id": "VEN3",
+        "name": "Anthony Santander",
+        "type": "batter",
+        "ops": 1.332,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN4": {
+        "id": "VEN4",
+        "name": "Eugenio Suarez",
+        "type": "batter",
+        "ops": 1.247,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN5": {
+        "id": "VEN5",
+        "name": "David Peralta",
+        "type": "batter",
+        "ops": 0.971,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN6": {
+        "id": "VEN6",
+        "name": "Luis Arraez",
+        "type": "batter",
+        "ops": 0.963,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN7": {
+        "id": "VEN7",
+        "name": "Jose Altuve",
+        "type": "batter",
+        "ops": 0.736,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN8": {
+        "id": "VEN8",
+        "name": "Andrés Giménez",
+        "type": "batter",
+        "ops": 0.662,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN9": {
+        "id": "VEN9",
+        "name": "Ronald Acuña",
+        "type": "batter",
+        "ops": 0.564,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN10": {
+        "id": "VEN10",
+        "name": "Eduardo Escobar",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN11": {
+        "id": "VEN11",
+        "name": "Omar Narváez",
+        "type": "batter",
+        "ops": 0.5,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN12": {
+        "id": "VEN12",
+        "name": "Gleyber Torres",
+        "type": "batter",
+        "ops": 0.408,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN13": {
+        "id": "VEN13",
+        "name": "Luis Rengifo",
+        "type": "batter",
+        "ops": 0.337,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN14": {
+        "id": "VEN14",
+        "name": "Miguel Cabrera",
+        "type": "batter",
+        "ops": 0.222,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN15": {
+        "id": "VEN15",
+        "name": "Hernán Pérez",
+        "type": "batter",
+        "ops": 0.0,
+        "history_ops": [
+            0
+        ]
+    },
+    "VEN16": {
+        "id": "VEN16",
+        "name": "Luis Garcia",
+        "type": "pitcher",
+        "whip": 0.86,
+        "k9": 12.857142857142858,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN17": {
+        "id": "VEN17",
+        "name": "Pablo López",
+        "type": "pitcher",
+        "whip": 1.43,
+        "k9": 2.142857142857143,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN18": {
+        "id": "VEN18",
+        "name": "José Ruiz",
+        "type": "pitcher",
+        "whip": 0.69,
+        "k9": 4.390243902439025,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN19": {
+        "id": "VEN19",
+        "name": "Silvino Bracho",
+        "type": "pitcher",
+        "whip": 0.5,
+        "k9": 9.0,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN20": {
+        "id": "VEN20",
+        "name": "Jesús Luzardo",
+        "type": "pitcher",
+        "whip": 1.25,
+        "k9": 11.25,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN21": {
+        "id": "VEN21",
+        "name": "Emmanuel De Jesus",
+        "type": "pitcher",
+        "whip": 1.36,
+        "k9": 14.0625,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN22": {
+        "id": "VEN22",
+        "name": "Martin Pérez",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 5.625,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN23": {
+        "id": "VEN23",
+        "name": "José Alvarado",
+        "type": "pitcher",
+        "whip": 1.33,
+        "k9": 15.0,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN24": {
+        "id": "VEN24",
+        "name": "Carlos Hernández",
+        "type": "pitcher",
+        "whip": 1.13,
+        "k9": 20.454545454545453,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN25": {
+        "id": "VEN25",
+        "name": "José Quijada",
+        "type": "pitcher",
+        "whip": 2.14,
+        "k9": 8.571428571428571,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN26": {
+        "id": "VEN26",
+        "name": "Jhoulys Chacín",
+        "type": "pitcher",
+        "whip": 1.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN27": {
+        "id": "VEN27",
+        "name": "Eduardo Rodríguez",
+        "type": "pitcher",
+        "whip": 3.5,
+        "k9": 13.5,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN28": {
+        "id": "VEN28",
+        "name": "Darwinzon Hernández",
+        "type": "pitcher",
+        "whip": 1.0,
+        "k9": 18.0,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN29": {
+        "id": "VEN29",
+        "name": "Endrys Briceño",
+        "type": "pitcher",
+        "whip": 3.0,
+        "k9": 0.0,
+        "history_era": [
+            0
+        ]
+    },
+    "VEN30": {
+        "id": "VEN30",
+        "name": "Andrés Machado",
+        "type": "pitcher",
+        "whip": 12.0,
+        "k9": 90.0,
+        "history_era": [
+            0
+        ]
     }
 }
