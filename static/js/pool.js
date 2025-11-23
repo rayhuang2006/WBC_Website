@@ -48,7 +48,6 @@ function drawBarChart(teamData) {
     // 1. 準備資料
     // 我們把每個隊伍的名稱和數值提取出來變成陣列
     const teamNames = teamData.map(team => team.name);
-    const teamIds = teamData.map(team => team.id); // 為了下鑽跳轉用
 
     // 假設我們要比較 ERA 和 OPS 的戰力分數
     const eraScores = teamData.map(team => team.normalized_stats.ERA);
