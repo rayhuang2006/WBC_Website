@@ -33,22 +33,53 @@
 </main>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
+<script src="//unpkg.com/d3"></script>
 <script src="{{ url_for('static', filename='js/pool.js') }}"></script>
 
 <script>
-    // 等待網頁載入完成後再執行 (這是好習慣)
+    // 等待網頁載入完成後再執行
     document.addEventListener('DOMContentLoaded', function () {
 
-        // 從 Flask 傳來的資料
+        // --- 1. 從 Flask 傳來的資料 (已就緒) ---
         const flaskData = {{ teams | tojson }};
-        
-        // 繪製雷達圖
-        drawRadarChart(flaskData);
+        console.log('Flask Data:', flaskData);
 
-        // 繪製長條圖
-        drawBarChart(flaskData);
-        
+        // --- 2. 外部 CSV 資料的 Promise ---
+        const hittingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC%20Team_Hitting_Performance.csv";
+        const pitchingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC_Team_Pitching_Performance.csv";
+
+        // 只將需要等待的異步操作放入 Promise.all
+        Promise.all([
+            d3.csv(hittingCsvUrl),  // Index 0: Hitting Data
+            d3.csv(pitchingCsvUrl)  // Index 1: Pitching Data
+        ]).then(
+            res => {
+                // 將結果解構，讓程式碼可讀性更高
+                const csvHittingData = res[0];
+                const csvPitchingData = res[1];
+                
+                // 整合所有數據成一個方便處理的物件 (可選，但推薦)
+                const allData = {
+                    flask: flaskData,
+                    hitting: csvHittingData,
+                    pitching: csvPitchingData
+                };
+
+                console.log('All Data:', allData);
+
+                // --- 繪圖函式呼叫 ---
+
+                // 繪製雷達圖 (使用 Flask 數據，或您整合後想要的數據)
+                // drawRadarChart(flaskData); // 如果 drawRadarChart只需要 flaskData
+                drawRadarChart(allData); // 如果 drawRadarChart需要所有數據
+
+                // 繪製長條圖 (使用 Flask 數據，或您整合後想要的數據)
+                drawBarChart(flaskData); // 照您原本的寫法
+            }
+        ).catch(error => {
+            // 處理 CSV 載入失敗或 Promise 錯誤
+            console.error("Error loading CSV data:", error);
+        });
     });
 </script>
 
