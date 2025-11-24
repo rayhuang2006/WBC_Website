@@ -1,7 +1,8 @@
 /* --- 全局設定 --- */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f4f7f9; /* 儀表板常用的淺灰色背景 */
+    background-color: #f4f7f9;
+    /* 儀表板常用的淺灰色背景 */
     color: #333;
     margin: 0;
     line-height: 1.6;
@@ -9,7 +10,8 @@ body {
 
 /* --- 頁首 Header --- */
 header {
-    background-color: #003366; /* 棒球主題的深藍色 */
+    background-color: #003366;
+    /* 棒球主題的深藍色 */
     color: white;
     padding: 1.5rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -21,7 +23,8 @@ header h1 {
 }
 
 .back-link {
-    color: #aaccff; /* 淺藍色，不搶眼 */
+    color: #aaccff;
+    /* 淺藍色，不搶眼 */
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.2s ease;
@@ -73,13 +76,15 @@ main {
 
 .plotly-chart {
     width: 100%;
-    min-height: 450px; /* 確保容器有高度 */
+    min-height: 450px;
+    /* 確保容器有高度 */
 }
 
 /* --- L3 隊伍卡片網格 --- */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 欄卡片 */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 欄卡片 */
     gap: 1rem;
 }
 
@@ -130,12 +135,35 @@ main {
         /* 手機上，隊伍卡片也改為 1 欄 */
         grid-template-columns: 1fr;
     }
-    
+
     header {
         padding: 1rem;
     }
-    
+
     header h1 {
         font-size: 1.4rem;
     }
+}
+
+#radar-plots-container {
+    display: flex;
+    /* 啟用 Flexbox */
+    flex-wrap: wrap;
+    /* 允許圖表在空間不足時換行 */
+    justify-content: space-around;
+    /* 圖表之間保持間距 */
+    width: 100%;
+}
+
+.plot-box {
+    /* 讓每個圖表佔據容器寬度的 50% (例如，兩兩一排) */
+    /* 如果想四個一排，可以設為 25% */
+    width: 45%;
+    min-width: 300px;
+    /* 確保在小螢幕上不會太小 */
+    height: 400px;
+    /* 必須給予高度，否則圖表不會顯示 */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 增加視覺效果 */
 }
