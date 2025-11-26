@@ -155,3 +155,20 @@ def predict_matchup():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+@app.route('/player/<player_id>')
+def player_details(player_id):
+    # 1. 讀取剛剛整理好的 players.json
+    with open('data/players.json', 'r', encoding='utf-8') as f:
+        players_data = json.load(f)
+    
+    # 2. 根據 ID 抓取該球員資料
+    # 例如 ID 是 "TPE17"
+    player = players_data.get(player_id)
+
+    if not player:
+        return "查無此球員", 404
+
+    # 3. 將資料傳給 HTML
+    return render_template('player.html', player=player)
