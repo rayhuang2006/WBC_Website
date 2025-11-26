@@ -1,0 +1,151 @@
+/* ===== 全局設定 ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* 深藍黑乾淨背景（高級感） */
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;  /* ⭐ 標準亮字色，清晰好讀 */
+}
+
+/* 整體外框 */
+.dashboard-root {
+  max-width: 1400px;
+  margin: 30px auto 45px;
+  padding: 0 24px;
+}
+
+/* ===== 頂部 Header ===== */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+
+  padding: 22px 26px;
+  border-radius: 18px;
+
+  /* 高對比漸層 + 更亮的亮點 */
+  background: linear-gradient(120deg, #1e293b, #1d4ed8 50%, #ec4899);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+
+  color: #ffffff;  /* ⭐ 保證白色字 */
+}
+
+/* 左側 logo + 標題 */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  font-size: 26px;
+  color: #1e293b;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #fde047);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0;
+  color: #ffffff;  /* ⭐ 白色醒目標題 */
+  letter-spacing: 0.03em;
+}
+
+.app-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #000000;  /* ⭐ 明亮灰白，清楚 */
+  opacity: 0.9;
+}
+
+/* 右側標籤 */
+.header-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tag-pill {
+  font-size: 11px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.17);
+  backdrop-filter: blur(6px);
+  color: #fdfdfd; /* ⭐ 字變亮白 */
+}
+
+/* ===== 主內容區 ===== */
+.dashboard-main {
+  margin-top: 22px;
+  background: rgba(192, 202, 245, 0.473); /* 深色微透明卡片 */
+  border-radius: 18px;
+  padding: 26px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* 內容標題文字（高亮） */
+.dashboard-main h1 {
+  font-size: 30px;
+  margin: 0 0 14px;
+  color: #000000;  
+  font-weight: 800;
+}
+
+.dashboard-main h2 {
+  font-size: 24px;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  color: #000000; 
+  font-weight: 700;
+}
+
+/* 段落與一般文字 */
+.dashboard-main p,
+.dashboard-main li,
+.dashboard-main span {
+  color: #000000; 
+  font-size: 17px;
+}
+
+/* ===== 世界地圖更大更亮 ===== */
+#world-map {
+  width: 100%;
+  height: 560px !important;  /* ⭐ 再加大一點 */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+/* RWD */
+@media (max-width: 900px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

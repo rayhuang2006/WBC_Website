@@ -1,28 +1,64 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>選擇分組</h2>
+<div class="page-wrapper">
+  <div class="page-card">
+    <!-- 頁面標題區 -->
+    <header class="page-header">
+      <h1 class="page-title">WBC 分組總覽與世界地圖</h1>
+      <p class="page-subtitle">
+        快速瀏覽各分組的參賽國家，並透過互動世界地圖掌握各國世界排名與地理分布。
+      </p>
+    </header>
 
-<ul>
-    {% for key, pool in pools.items() %}
-    <li>
-        <a href="/pool/{{ key }}">{{ pool.name }}</a>
-    </li>
-    {% endfor %}
-</ul>
-<hr>
+    <!-- 左：分組卡片 ；右：世界地圖 -->
+    <div class="main-layout">
+      <!-- 分組列表 -->
+      <section>
+        <h2 class="section-title">分組列表</h2>
+        <p class="section-subtitle">
+          點擊任一分組可前往該組詳細頁面。
+        </p>
 
-<h3>WBC 參賽國世界地圖</h3>
-<p>
-    點擊國家可以進入該隊的 Team 頁面。
-</p>
+        <ul class="pool-list">
+          {% for key, pool in pools.items() %}
+          <li class="pool-item">
+            <a class="pool-link" href="/pool/{{ key }}">
+              <div class="pool-name-row">
+                <span class="pool-name">{{ pool.name }}</span>
+                <span class="pool-tag">{{ pool.teams|length }} Teams</span>
+              </div>
+              <div class="pool-meta">
+                {{ pool.teams | map(attribute='name') | join(', ') }}
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
 
-<div id="world-map" style="width:100%; height:800px;"></div>
-<script src="{{ url_for('static', filename='js/world-map.js') }}"></script>
-<!-- 3. 呼叫 drawMapChart，把後端 pools 傳進去 -->
-<script>
-  const poolsData = {{ pools | tojson }};
-  drawMapChart(poolsData);
-</script>
+      <!-- 世界地圖 -->
+      <section>
+        <div class="map-card">
+          <h2 class="map-title">WBC 參賽國世界地圖（依世界排名上色）</h2>
+          <p class="map-subtitle">
+            只對本屆 WBC 參賽國上色，顏色越深代表世界排名越前面。點擊國家可下鑽到該隊資訊頁面。
+          </p>
+          <div id="world-map"></div>
+        </div>
+      </section>
+    </div>
 
+    <!-- JS：只畫世界地圖，不再畫 Bar Chart -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+    <script>
+      const poolsData = {{ pools | tojson }};
+      // 只呼叫世界地圖的函式
+      drawMapChart(poolsData);
+    </script>
+
+  </div>
+</div>
 {% endblock %}
+
