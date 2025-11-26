@@ -156,6 +156,7 @@ def predict_matchup():
 if __name__ == "__main__":
     app.run(debug=True)
 
+
 @app.route('/player/<player_id>')
 def player_details(player_id):
     # 1. 讀取剛剛整理好的 players.json
