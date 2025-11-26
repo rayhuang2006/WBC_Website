@@ -4,10 +4,34 @@
     <meta charset="utf-8">
     <title>WBC Dashboard</title>
     <script src="https://cdn.plot.ly/plotly-2.33.0.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 </head>
 <body>
-    <h1>WBC Dashboard</h1>
-    <hr>
-    {% block content %}{% endblock %}
+    <div class="dashboard-root">
+
+        <!-- 頂部漂亮的 Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <div class="logo-circle">W</div>
+                <div class="title-block">
+                    <h1 class="app-title">WBC Dashboard</h1>
+                    <p class="app-subtitle">
+                        World Baseball Classic · Pools &amp; Rankings
+                    </p>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="tag-pill">Interactive</span>
+                <span class="tag-pill">Data Visualization</span>
+                <span class="tag-pill">Baseball Analytics</span>
+            </div>
+        </header>
+
+        <!-- 主內容：這裡放你原本的 index.html / pool 頁面內容 -->
+        <main class="dashboard-main">
+            {% block content %}{% endblock %}
+        </main>
+
+    </div>
 </body>
 </html>
