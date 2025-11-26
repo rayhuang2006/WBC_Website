@@ -5824,27 +5824,6 @@
         "bb": 0,
         "so": 0
     },
-    沒問題！這是最後一隊波多黎各隊 (PUR) 的更新數據。
-
-我已經執行了您的所有要求：
-
-打者：新增 ab, 1b, 2b, 3b, hr, out。
-
-投手：新增 bb, so。
-
-特定修正：
-
-PUR25 的名字已更正為 "Edwin Díaz"。
-
-PUR29 (Michael Petersen) 的 era 已設定為 0.00。
-
-根據圖片重新校正了投手的 K/9 (例如 José De León 的 K9 為 15.88)。
-
-請直接複製以下 JSON：
-
-JSON
-
-{
     "PUR1": {
         "id": "PUR1",
         "name": "Javier Báez",
