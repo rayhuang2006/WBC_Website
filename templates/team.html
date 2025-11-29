@@ -16,19 +16,27 @@
   background: #f9f9f9;
   word-break: keep-all;
 }
+/* 讓圖表顯示為可點擊狀態 */
+#scatter, #bar { cursor: pointer; }
+/* 本頁主要標題顏色覆寫（僅限此模板） */
+.team-page-title,
+.team-page-subtitle,
+.team-section-title {
+  color: #000000;
+}
 @media (max-width: 700px) {
   .player-grid { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 
-<h2>{{ team_name }} 隊伍</h2>
+<h2 class="team-page-title">{{ team_name }} 隊伍</h2>
 
-<h3>球員名單</h3>
+<h3 class="team-page-subtitle">球員名單</h3>
 
 {% set pitchers = players|selectattr('type','equalto','pitcher')|list %}
 {% set batters  = players|selectattr('type','equalto','batter')|list %}
 
-<h4>投手</h4>
+<h4 class="team-section-title">投手</h4>
 <div class="player-grid">
   {% for p in pitchers %}
   <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
@@ -37,7 +45,7 @@
   {% endfor %}
 </div>
 
-<h4>打者</h4>
+<h4 class="team-section-title">打者</h4>
 <div class="player-grid">
   {% for p in batters %}
   <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
@@ -90,6 +98,43 @@ const barLayout = {
 };
 
 Plotly.newPlot("bar", [barTrace], barLayout);
+
+// 點擊圖表導向球員頁面
+(function(){
+  const scatterDiv = document.getElementById('scatter');
+  if (scatterDiv && typeof scatterDiv.on === 'function') {
+    scatterDiv.on('plotly_click', function(data){
+      try {
+        const pt = data.points && data.points[0];
+        if (!pt) return;
+        const idx = pt.pointIndex;
+        const player = pitchersData[idx];
+        if (player && player.id) {
+          window.location.href = `/player/${player.id}`;
+        }
+      } catch (e) {
+        console.error('scatter click error', e);
+      }
+    });
+  }
+
+  const barDiv = document.getElementById('bar');
+  if (barDiv && typeof barDiv.on === 'function') {
+    barDiv.on('plotly_click', function(data){
+      try {
+        const pt = data.points && data.points[0];
+        if (!pt) return;
+        const idx = pt.pointIndex;
+        const player = battersData[idx];
+        if (player && player.id) {
+          window.location.href = `/player/${player.id}`;
+        }
+      } catch (e) {
+        console.error('bar click error', e);
+      }
+    });
+  }
+})();
 </script>
 
 {% endblock %}

@@ -60,7 +60,7 @@ function drawRadarChart(allData) {
 
         // 4. 設定佈局
         const layout = {
-            title: '各隊投打戰力雷達圖', // 建議加上標題
+            title: `${team.name} 投打戰力雷達圖`, // 建議加上標題
             polar: {
                 radialaxis: {
                     visible: true,
