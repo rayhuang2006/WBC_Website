@@ -1,140 +1,101 @@
 {% extends "base.html" %}
 
 {% block content %}
-<style>
-.player-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  margin: 8px 0 16px 0;
-  padding: 0;
-}
-.player-item {
-  padding: 6px 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background: #f9f9f9;
-  word-break: keep-all;
-}
-/* 讓圖表顯示為可點擊狀態 */
-#scatter, #bar { cursor: pointer; }
-/* 本頁主要標題顏色覆寫（僅限此模板） */
-.team-page-title,
-.team-page-subtitle,
-.team-section-title {
-  color: #000000;
-}
-@media (max-width: 700px) {
-  .player-grid { grid-template-columns: repeat(2, 1fr); }
-}
-</style>
+<div class="page-card">
+    <h2 style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 20px; color: #fff;">
+        {{ team_name }} 隊伍詳情
+    </h2>
 
-<h2 class="team-page-title">{{ team_name }} 隊伍</h2>
-
-<h3 class="team-page-subtitle">球員名單</h3>
-
-{% set pitchers = players|selectattr('type','equalto','pitcher')|list %}
-{% set batters  = players|selectattr('type','equalto','batter')|list %}
-
-<h4 class="team-section-title">投手</h4>
-<div class="player-grid">
-  {% for p in pitchers %}
-  <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
-  {% else %}
-  <div class="player-item">無投手資料</div>
-  {% endfor %}
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px;">
+        <div id="scatter" style="flex: 1; min-width: 300px; height: 450px; cursor: pointer;"></div>
+        <div id="bar" style="flex: 1; min-width: 300px; height: 450px; cursor: pointer;"></div>
+    </div>
 </div>
 
-<h4 class="team-section-title">打者</h4>
-<div class="player-grid">
-  {% for p in batters %}
-  <div class="player-item"><a href="/player/{{ p.id }}">{{ p.name }}</a></div>
-  {% else %}
-  <div class="player-item">無打者資料</div>
-  {% endfor %}
+<div id="team-data-storage"
+     data-pitchers='{{ pitchers | tojson | safe }}'
+     data-batters='{{ batters | tojson | safe }}'
+     style="display:none;">
 </div>
-<div id="scatter"></div>
-<div id="bar" style="margin-top:30px;"></div>
 
 <script>
-const playersData = {{ players | tojson }};
+    const dataDiv = document.getElementById('team-data-storage');
+    const pitchersData = dataDiv ? JSON.parse(dataDiv.dataset.pitchers) : [];
+    const battersData = dataDiv ? JSON.parse(dataDiv.dataset.batters) : [];
 
-const pitchersData = playersData.filter(p => p.type === "pitcher");
-const battersData  = playersData.filter(p => p.type === "batter");
+    const layoutConfig = {
+        font: { color: '#f1f5f9' },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        xaxis: { gridcolor: '#334155', showgrid: true },
+        yaxis: { gridcolor: '#334155', showgrid: true },
+        margin: { t: 40, b: 80, l: 50, r: 20 }
+    };
 
-// 投手散點圖（WHIP vs K/9）
-const pitcherTrace = {
-    x: pitchersData.map(p => p.whip || 0),
-    y: pitchersData.map(p => p.k9 || 0),
-    mode: "markers",
-    type: "scatter",
-    name: "投手 (WHIP vs K/9)",
-    text: pitchersData.map(p => p.name)
-};
+    // 1. 繪製投手散點圖
+    if (pitchersData && pitchersData.length > 0) {
+        const pTrace = {
+            x: pitchersData.map(p => p.whip || 0),
+            y: pitchersData.map(p => p.k9 || 0),
+            mode: 'markers',
+            type: 'scatter',
+            text: pitchersData.map(p => p.name),
+            // 【整合點】加入 customdata 存 ID，方便點擊跳轉
+            customdata: pitchersData.map(p => p.id), 
+            marker: { size: 14, color: '#3b82f6', line: {color: 'white', width: 1}, opacity: 0.8 }
+        };
+        
+        const pLayout = Object.assign({}, layoutConfig, {
+            title: '投手進階數據 (WHIP vs K/9) - 點擊查看球員',
+            xaxis: Object.assign({}, layoutConfig.xaxis, { title: 'WHIP' }),
+            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'K/9' }),
+            hovermode: 'closest'
+        });
 
-const scatterLayout = {
-    title: "投手散點圖",
-    xaxis: { title: "WHIP" },
-    yaxis: { title: "K/9" }
-};
+        Plotly.newPlot('scatter', [pTrace], pLayout, {displayModeBar: false});
 
-Plotly.newPlot("scatter", [pitcherTrace], scatterLayout);
+        // 【整合點】加入點擊事件監聽 (這是組員在 main 分支加的功能)
+        document.getElementById('scatter').on('plotly_click', function(data){
+            if(data.points.length > 0) {
+                // 取得我們藏在 customdata 裡的 player_id
+                const playerId = data.points[0].customdata;
+                if(playerId) {
+                    window.location.href = `/player/${playerId}`;
+                }
+            }
+        });
+    }
 
-// 打者 OPS 長條圖
-const barTrace = {
-    x: battersData.map(p => p.name),
-    y: battersData.map(p => p.ops || 0),
-    type: "bar",
-    name: "打者 OPS",
-    marker: { color: "orange" },
-    text: battersData.map(p => p.ops != null ? p.ops : "")
-};
+    // 2. 繪製打者 OPS 長條圖
+    if (battersData && battersData.length > 0) {
+        const topBatters = battersData.sort((a, b) => (b.ops || 0) - (a.ops || 0)).slice(0, 15);
+        
+        const bTrace = {
+            x: topBatters.map(p => p.name),
+            y: topBatters.map(p => p.ops || 0),
+            type: 'bar',
+            // 【整合點】加入 customdata
+            customdata: topBatters.map(p => p.id),
+            marker: { color: '#34d399' }
+        };
 
-const barLayout = {
-    title: "打者 OPS 長條圖",
-    xaxis: { title: "球員名稱", tickangle: -45 },
-    yaxis: { title: "OPS" },
-    margin: { b: 140 }
-};
+        const bLayout = Object.assign({}, layoutConfig, {
+            title: '打者 OPS 排行 - 點擊查看球員',
+            xaxis: Object.assign({}, layoutConfig.xaxis, { tickangle: -45 }),
+            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'OPS' })
+        });
 
-Plotly.newPlot("bar", [barTrace], barLayout);
+        Plotly.newPlot('bar', [bTrace], bLayout, {displayModeBar: false});
 
-// 點擊圖表導向球員頁面
-(function(){
-  const scatterDiv = document.getElementById('scatter');
-  if (scatterDiv && typeof scatterDiv.on === 'function') {
-    scatterDiv.on('plotly_click', function(data){
-      try {
-        const pt = data.points && data.points[0];
-        if (!pt) return;
-        const idx = pt.pointIndex;
-        const player = pitchersData[idx];
-        if (player && player.id) {
-          window.location.href = `/player/${player.id}`;
-        }
-      } catch (e) {
-        console.error('scatter click error', e);
-      }
-    });
-  }
-
-  const barDiv = document.getElementById('bar');
-  if (barDiv && typeof barDiv.on === 'function') {
-    barDiv.on('plotly_click', function(data){
-      try {
-        const pt = data.points && data.points[0];
-        if (!pt) return;
-        const idx = pt.pointIndex;
-        const player = battersData[idx];
-        if (player && player.id) {
-          window.location.href = `/player/${player.id}`;
-        }
-      } catch (e) {
-        console.error('bar click error', e);
-      }
-    });
-  }
-})();
+        // 【整合點】加入點擊事件監聽
+        document.getElementById('bar').on('plotly_click', function(data){
+            if(data.points.length > 0) {
+                const playerId = data.points[0].customdata;
+                if(playerId) {
+                    window.location.href = `/player/${playerId}`;
+                }
+            }
+        });
+    }
 </script>
-
 {% endblock %}

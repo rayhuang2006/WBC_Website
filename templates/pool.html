@@ -1,91 +1,84 @@
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 {% extends "base.html" %}
 
 {% block content %}
-<header>
-    <h2>WBC 戰力分析儀表板 - {{ pool_name }}</h2>
-    <a href="/" class="back-link">&larr; 返回 (L1) 世界總覽</a>
-</header>
-
-<main>
-    <section class="chart-container">
-        <h2>戰力雷達圖 (多維度比較)</h2>
-        <p>比較本組隊伍在打擊、投手、防守等面向的綜合戰力。</p>
-        <div id="radar-plots-container">
-
-            {% for team in teams %}
-            <div id="team-{{ team.name }}-plot" class="plot-box"></div>
-            {% endfor %}
+<div class="dashboard-root">
+    <header style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px;">
+        <div>
+            <h2 style="margin:0; font-size: 2rem; color: #fff;">{{ pool_name }} 戰力分析</h2>
         </div>
-    </section>
+        <a href="/" class="nav-btn">&larr; Back</a>
+    </header>
 
-    <section class="chart-container">
-        <h2>關鍵數據 (團隊 OPS / ERA)</h2>
-        <div id="barPlot" class="plotly-chart"></div>
-    </section>
+    <main style="display: flex; flex-direction: column; gap: 50px; width: 100%;">
+        
+        <section>
+            <h3 style="color: var(--accent-blue); margin-bottom: 20px;">戰力雷達圖 (Radar Cards)</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                {% for team in teams %}
+                <div class="interactive-card chart-card">
+                    <h4 style="margin-bottom: 10px; color: #fff;">{{ team.name }}</h4>
+                    <div id="team-{{ team.name }}-plot" style="width: 100%; height: 350px;"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
 
-    <section class="team-list-container">
-        <h2>分組隊伍 (點擊查看 L3 球員名單)</h2>
-        <div class="team-grid">
-            {% for team in team_list %}
-            <a href="/team/{{ team.name }}" class="team-card">
-                <img src="{{ url_for('static', filename='flags/' + team.iso_code + '.png') }}" alt="{{ team.name }}">
-                <span>{{ team.name }}</span>
-            </a>
-            {% endfor %}
-        </div>
-    </section>
-</main>
+        <section class="interactive-card" style="cursor: default;">
+            <h3 style="color: #fff; margin-bottom: 20px;">團隊數據比較</h3>
+            <div id="barPlot" class="plotly-chart" style="width:100%; height:500px;"></div>
+        </section>
+
+        <section>
+            <h3 style="color: #fff; margin-bottom: 20px;">參賽隊伍</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+                {% for team in team_list %}
+                <a href="/team/{{ team.name }}" class="interactive-card card-portrait" style="min-height: 250px;">
+                    <div style="flex: 1; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                        {% if team.iso_code %}
+                        <img src="{{ url_for('static', filename='flags/' + team.iso_code + '.png') }}" 
+                             style="width: 80px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-radius: 8px;">
+                        {% else %}
+                        <div style="width:80px; height:50px; background:#555;"></div>
+                        {% endif %}
+                    </div>
+                    <span style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">{{ team.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<div id="flask-data" data-teams='{{ teams | tojson | safe }}' style="display:none;"></div>
 
 <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 <script src="//unpkg.com/d3"></script>
 <script src="{{ url_for('static', filename='js/pool.js') }}"></script>
 
 <script>
-    // 等待網頁載入完成後再執行
+    const flaskData = JSON.parse(document.getElementById('flask-data').dataset.teams);
+    
+    // 全局深色設定 (重要！)
+    window.PLOT_LAYOUT = {
+        font: { color: '#e2e8f0' }, // 淺灰字
+        paper_bgcolor: 'rgba(0,0,0,0)', // 全透明
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        xaxis: { gridcolor: '#334155' },
+        yaxis: { gridcolor: '#334155' },
+        autosize: true
+    };
+
     document.addEventListener('DOMContentLoaded', function () {
+        const hittingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC%20Team_Hitting_Performance.csv";
+        const pitchingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC_Team_Pitching_Performance.csv";
 
-        // --- 1. 從 Flask 傳來的資料 (已就緒) ---
-        const flaskData = {{ teams | tojson
-    }};
-    console.log('Flask Data:', flaskData);
-
-    // --- 2. 外部 CSV 資料的 Promise ---
-    const hittingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC%20Team_Hitting_Performance.csv";
-    const pitchingCsvUrl = "https://raw.githubusercontent.com/slps101023/Datasets/refs/heads/main/WBC_Team_Pitching_Performance.csv";
-
-    // 只將需要等待的異步操作放入 Promise.all
-    Promise.all([
-        d3.csv(hittingCsvUrl),  // Index 0: Hitting Data
-        d3.csv(pitchingCsvUrl)  // Index 1: Pitching Data
-    ]).then(
-        res => {
-            // 將結果解構，讓程式碼可讀性更高
-            const csvHittingData = res[0];
-            const csvPitchingData = res[1];
-
-            // 整合所有數據成一個方便處理的物件 (可選，但推薦)
-            const allData = {
-                flask: flaskData,
-                hitting: csvHittingData,
-                pitching: csvPitchingData
-            };
-
-            // --- 繪圖函式呼叫 ---
-
-            // 繪製雷達圖 (使用 Flask 數據，或您整合後想要的數據)
-            // drawRadarChart(flaskData); // 如果 drawRadarChart只需要 flaskData
-            drawRadarChart(allData); // 如果 drawRadarChart需要所有數據
-
-            // 繪製長條圖 (使用 Flask 數據，或您整合後想要的數據)
-            // drawBarChart(flaskData); // 照您原本的寫法
-            drawBarChart(allData); // 如果 drawBarChart需要所有數據
-        }
-    ).catch(error => {
-        // 處理 CSV 載入失敗或 Promise 錯誤
-        console.error("Error loading CSV data:", error);
-    });
+        Promise.all([d3.csv(hittingCsvUrl), d3.csv(pitchingCsvUrl)])
+        .then(res => {
+            const allData = { flask: flaskData, hitting: res[0], pitching: res[1] };
+            if (typeof drawRadarChart === 'function') drawRadarChart(allData);
+            if (typeof drawBarChart === 'function') drawBarChart(allData);
+        });
     });
 </script>
-
 {% endblock %}
