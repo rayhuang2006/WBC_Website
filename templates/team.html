@@ -1,15 +1,65 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="page-card">
-    <h2 style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 20px; color: #fff;">
-        {{ team_name }} 隊伍詳情
-    </h2>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px;">
-        <div id="scatter" style="flex: 1; min-width: 300px; height: 450px; cursor: pointer;"></div>
-        <div id="bar" style="flex: 1; min-width: 300px; height: 450px; cursor: pointer;"></div>
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
+    <div>
+        <h2 style="margin:0; font-size: 2rem; color: #fff;">{{ team_name }} 隊伍詳情</h2>
     </div>
+    <a href="/" class="nav-btn">&larr; 返回首頁</a>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 40px;">
+
+    <section>
+        <h3 style="color: var(--accent-blue); margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+            投手陣容 (Pitchers)
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 20px; justify-items: center;">
+            {% for p in pitchers %}
+            <a href="/player/{{ p.id }}" class="interactive-card mini-player-card">
+                <div class="player-icon-placeholder" style="color: var(--accent-blue);">
+                    <span>🧢</span>
+                </div>
+                <div class="player-name">{{ p.name }}</div>
+                <div class="player-pos" style="color: var(--accent-blue);">Pitcher</div>
+            </a>
+            {% else %}
+            <div style="color: #888; grid-column: 1 / -1; text-align: center;">暫無投手資料</div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section>
+        <h3 style="color: #34d399; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+            打者陣容 (Batters)
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 20px; justify-items: center;">
+            {% for p in batters %}
+            <a href="/player/{{ p.id }}" class="interactive-card mini-player-card">
+                <div class="player-icon-placeholder" style="color: #34d399;">
+                    <span>⚾</span>
+                </div>
+                <div class="player-name">{{ p.name }}</div>
+                <div class="player-pos" style="color: #34d399;">Batter</div>
+            </a>
+            {% else %}
+            <div style="color: #888; grid-column: 1 / -1; text-align: center;">暫無打者資料</div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section style="margin-top: 20px;">
+        <h3 style="color: #fff; margin-bottom: 20px;">隊伍數據分析 (點擊圖表可查看球員)</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+            <div class="interactive-card chart-card" style="flex: 1; min-width: 300px; height: 450px;">
+                <div id="scatter" style="width:100%; height:100%;"></div>
+            </div>
+            <div class="interactive-card chart-card" style="flex: 1; min-width: 300px; height: 450px;">
+                <div id="bar" style="width:100%; height:100%;"></div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <div id="team-data-storage"
@@ -18,6 +68,7 @@
      style="display:none;">
 </div>
 
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 <script>
     const dataDiv = document.getElementById('team-data-storage');
     const pitchersData = dataDiv ? JSON.parse(dataDiv.dataset.pitchers) : [];
@@ -29,10 +80,11 @@
         plot_bgcolor: 'rgba(0,0,0,0)',
         xaxis: { gridcolor: '#334155', showgrid: true },
         yaxis: { gridcolor: '#334155', showgrid: true },
-        margin: { t: 40, b: 80, l: 50, r: 20 }
+        margin: { t: 50, b: 50, l: 60, r: 20 },
+        autosize: true
     };
 
-    // 1. 繪製投手散點圖
+    // --- 1. 繪製投手散點圖 ---
     if (pitchersData && pitchersData.length > 0) {
         const pTrace = {
             x: pitchersData.map(p => p.whip || 0),
@@ -40,33 +92,40 @@
             mode: 'markers',
             type: 'scatter',
             text: pitchersData.map(p => p.name),
-            // 【整合點】加入 customdata 存 ID，方便點擊跳轉
-            customdata: pitchersData.map(p => p.id), 
-            marker: { size: 14, color: '#3b82f6', line: {color: 'white', width: 1}, opacity: 0.8 }
+            // 加入 customdata 用於點擊跳轉
+            customdata: pitchersData.map(p => p.id),
+            marker: { 
+                size: 14, 
+                color: pitchersData.map(p => p.k9 || 0),
+                colorscale: 'Blues',
+                reversescale: true,
+                line: {color: 'white', width: 1},
+                opacity: 0.8
+            }
         };
         
         const pLayout = Object.assign({}, layoutConfig, {
-            title: '投手進階數據 (WHIP vs K/9) - 點擊查看球員',
-            xaxis: Object.assign({}, layoutConfig.xaxis, { title: 'WHIP' }),
-            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'K/9' }),
+            title: '投手進階數據 (WHIP vs K/9)',
+            xaxis: Object.assign({}, layoutConfig.xaxis, { title: 'WHIP (每局被上壘率)' }),
+            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'K/9 (每九局三振數)' }),
             hovermode: 'closest'
         });
 
         Plotly.newPlot('scatter', [pTrace], pLayout, {displayModeBar: false});
 
-        // 【整合點】加入點擊事件監聽 (這是組員在 main 分支加的功能)
+        // 綁定點擊事件 (組員的功能)
         document.getElementById('scatter').on('plotly_click', function(data){
             if(data.points.length > 0) {
-                // 取得我們藏在 customdata 裡的 player_id
                 const playerId = data.points[0].customdata;
-                if(playerId) {
-                    window.location.href = `/player/${playerId}`;
-                }
+                if(playerId) window.location.href = `/player/${playerId}`;
             }
         });
+
+    } else {
+        document.getElementById('scatter').innerHTML = '<div style="height:100%; display:flex; justify-content:center; align-items:center; color:#888;">無足夠數據繪製圖表</div>';
     }
 
-    // 2. 繪製打者 OPS 長條圖
+    // --- 2. 繪製打者 OPS 長條圖 ---
     if (battersData && battersData.length > 0) {
         const topBatters = battersData.sort((a, b) => (b.ops || 0) - (a.ops || 0)).slice(0, 15);
         
@@ -74,28 +133,34 @@
             x: topBatters.map(p => p.name),
             y: topBatters.map(p => p.ops || 0),
             type: 'bar',
-            // 【整合點】加入 customdata
+            // 加入 customdata
             customdata: topBatters.map(p => p.id),
-            marker: { color: '#34d399' }
+            marker: { 
+                color: topBatters.map(p => p.ops || 0),
+                colorscale: 'Greens',
+                reversescale: true
+            }
         };
 
         const bLayout = Object.assign({}, layoutConfig, {
-            title: '打者 OPS 排行 - 點擊查看球員',
+            title: '打者 OPS (攻擊指數) 排行',
             xaxis: Object.assign({}, layoutConfig.xaxis, { tickangle: -45 }),
-            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'OPS' })
+            yaxis: Object.assign({}, layoutConfig.yaxis, { title: 'OPS' }),
+            margin: { t: 50, b: 100, l: 60, r: 20 }
         });
 
         Plotly.newPlot('bar', [bTrace], bLayout, {displayModeBar: false});
 
-        // 【整合點】加入點擊事件監聽
+        // 綁定點擊事件
         document.getElementById('bar').on('plotly_click', function(data){
             if(data.points.length > 0) {
                 const playerId = data.points[0].customdata;
-                if(playerId) {
-                    window.location.href = `/player/${playerId}`;
-                }
+                if(playerId) window.location.href = `/player/${playerId}`;
             }
         });
+
+    } else {
+        document.getElementById('bar').innerHTML = '<div style="height:100%; display:flex; justify-content:center; align-items:center; color:#888;">無足夠數據繪製圖表</div>';
     }
 </script>
 {% endblock %}
