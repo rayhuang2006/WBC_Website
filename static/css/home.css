@@ -1,151 +1,331 @@
-/* ===== 全局設定 ===== */
-*,
-*::before,
-*::after {
+/* static/css/home.css */
+
+:root {
+  /* --- 色票定義 (深藍色系專業風格) --- */
+  --bg-deep: #0f172a;       /* 最深背景 (Slate 900) */
+  --bg-card: #1e293b;       /* 卡片背景 (Slate 800) */
+  --bg-hover: #334155;      /* 卡片懸停 (Slate 700) */
+  
+  --text-main: #f1f5f9;     /* 主要文字 (Slate 100) */
+  --text-muted: #94a3b8;    /* 次要文字 (Slate 400) */
+  
+  --accent-blue: #3b82f6;   /* 亮藍點綴 (Blue 500) */
+  --accent-glow: rgba(59, 130, 246, 0.5); /* 藍色光暈 */
+  
+  --card-radius: 16px;
+  --transition-speed: 0.3s;
+}
+
+/* 全局設定 */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-
-  /* 深藍黑乾淨背景（高級感） */
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #e2e8f0;  /* ⭐ 標準亮字色，清晰好讀 */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  /* 深邃背景漸層 */
+  background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f172a 60%);
+  background-attachment: fixed; /* 背景固定，滾動時更有質感 */
+  min-height: 100vh;
 }
 
-/* 整體外框 */
+/* 連結樣式 */
+a {
+  text-decoration: none;
+  color: var(--accent-blue);
+  transition: color 0.2s;
+}
+a:hover {
+  color: #60a5fa;
+}
+
+/* --- 頂部 Header --- */
 .dashboard-root {
   max-width: 1400px;
-  margin: 30px auto 45px;
-  padding: 0 24px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* ===== 頂部 Header ===== */
 .dashboard-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.2rem;
-
-  padding: 22px 26px;
-  border-radius: 18px;
-
-  /* 高對比漸層 + 更亮的亮點 */
-  background: linear-gradient(120deg, #1e293b, #1d4ed8 50%, #ec4899);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
-
-  color: #ffffff;  /* ⭐ 保證白色字 */
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  background: rgba(30, 41, 59, 0.7); /* 半透明深藍 */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* 左側 logo + 標題 */
+.logo-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 .header-left {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.logo-circle {
-  width: 58px;
-  height: 58px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 900;
-  font-size: 26px;
-  color: #1e293b;
-  background: radial-gradient(circle at 30% 30%, #ffffff, #fde047);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
-}
-
-.title-block {
-  display: flex;
-  flex-direction: column;
-}
-
 .app-title {
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 1.8rem;
+  font-weight: 800;
   margin: 0;
-  color: #ffffff;  /* ⭐ 白色醒目標題 */
-  letter-spacing: 0.03em;
+  color: #fff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 20px var(--accent-glow);
 }
 
 .app-subtitle {
-  margin: 0;
-  font-size: 13px;
-  color: #000000;  /* ⭐ 明亮灰白，清楚 */
-  opacity: 0.9;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 4px 0 0 0;
 }
 
-/* 右側標籤 */
 .header-right {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 10px;
 }
 
-.tag-pill {
-  font-size: 11px;
-  padding: 5px 11px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background: rgba(248, 246, 246, 0.17);
-  backdrop-filter: blur(6px);
-  color: #fdfdfd; /* ⭐ 字變亮白 */
+.nav-btn {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: 1px solid transparent;
 }
 
-/* ===== 主內容區 ===== */
-.dashboard-main {
-  margin-top: 22px;
-  background: rgb(136, 227, 255); /* 深色微透明卡片 */
-  border-radius: 18px;
-  padding: 26px;
-  backdrop-filter: blur(4px); 
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35); 
+.nav-btn:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: var(--accent-blue);
+  color: #fff;
 }
 
-/* 內容標題文字（高亮） */
-.dashboard-main h1 {
-  font-size: 30px;
-  margin: 0 0 14px;
-  color: #000000;  
-  font-weight: 800;
+/* --- 通用內容卡片 (取代原本亮色卡片) --- */
+.dashboard-main, 
+.page-card, 
+.chart-container, 
+.team-list-container,
+.map-card {
+  background: var(--bg-card);
+  border-radius: var(--card-radius);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 2rem;
 }
 
-.dashboard-main h2 {
-  font-size: 24px;
-  margin-top: 26px;
-  margin-bottom: 10px;
-  color: #000000; 
-  font-weight: 700;
+h1, h2, h3, h4 {
+  color: #fff;
+  margin-top: 0;
 }
 
-/* 段落與一般文字 */
-.dashboard-main p,
-.dashboard-main li,
-.dashboard-main span {
-  color: #000000; 
-  font-size: 17px;
+/* --- Plotly 圖表修正 --- */
+/* 強制讓 Plotly 背景透明，以適應深色主題 */
+.js-plotly-plot .plotly .main-svg {
+  background: transparent !important;
+}
+.js-plotly-plot .plotly .bg {
+  fill-opacity: 0 !important;
+}
+/* 讓圖表文字變亮 */
+.gtitle, .xtitle, .ytitle, .legendtext {
+  fill: var(--text-main) !important;
 }
 
-/* ===== 世界地圖更大更亮 ===== */
-#world-map {
-  width: 100%;
-  height: 560px !important;  /* ⭐ 再加大一點 */
-  border-radius: 12px;
-  overflow: hidden;
-  margin-top: 12px;
+/* --- 3D 互動卡片樣式 (Pokemon Card Effect) --- */
+.interactive-card {
+  position: relative;
+  background: linear-gradient(145deg, #253147, #1e293b);
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden; /* 為了光澤效果 */
+  text-decoration: none; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 卡片內文字 */
+.interactive-card span, 
+.interactive-card h3, 
+.interactive-card p,
+.interactive-card div {
+  color: var(--text-main);
+  transform: translateZ(20px); /* 讓文字浮起來 (視差) */
+}
+
+/* 光澤層 (Sheen) */
+.interactive-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.15) 40%,
+    transparent 60%
+  );
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Hover 狀態 */
+.interactive-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+  border-color: var(--accent-blue);
+  z-index: 10;
+}
+
+.interactive-card:hover::after {
+  opacity: 1;
 }
 
 /* RWD */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .dashboard-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
 }
 
+/* 確保主內容區塊寬度正確 */
+main {
+    width: 100%;
+    display: block;
+}
 
+/* 修正標題漸層文字的相容性 */
+h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+/* ... (保留原本上面的設定) ... */
+
+/* --- 直式長方形卡片 (Trading Card Style) --- */
+.card-portrait {
+  /* 強制設定長寬比，模擬球員卡 3:4 或 2:3 */
+  aspect-ratio: 3 / 4; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  /* 確保內容不會跑出去 */
+  min-height: 320px; 
+}
+
+/* 讓卡片裡的內容垂直置中 */
+.card-portrait .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- 雷達圖卡片專用 --- */
+.chart-card {
+  min-height: 420px; /* 雷達圖需要高一點 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* --- 修正地圖容器 --- */
+.map-card {
+  background: rgba(255, 255, 255, 0.03); /* 極淡的背景 */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5); /* 內陰影增加深邃感 */
+}
+
+/* static/css/home.css - 請加在最下方 */
+
+/* --- 迷你球員卡 (Mini Trading Card Style) --- */
+.mini-player-card {
+  /* 設定為經典球員卡 2:3 比例 */
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  text-align: center;
+  /* 限制卡片最大與最小寬度，確保整齊 */
+  min-width: 110px;
+  max-width: 140px;
+  /* 讓卡片稍微緊湊一點 */
+  margin: auto;
+}
+
+/* 球員大頭照佔位符 (因為沒有照片，用一個圓形圖示代替) */
+.player-icon-placeholder {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 球員姓名 */
+.mini-player-card .player-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  line-height: 1.2;
+  /* 限制名字最多顯示兩行，超過省略 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 守備位置 */
+.mini-player-card .player-pos {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  font-weight: 600;
+}

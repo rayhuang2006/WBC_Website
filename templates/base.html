@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WBC Dashboard</title>
     <script src="https://cdn.plot.ly/plotly-2.33.0.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
@@ -9,29 +10,26 @@
 <body>
     <div class="dashboard-root">
 
-        <!-- 頂部漂亮的 Header -->
         <header class="dashboard-header">
             <div class="header-left">
                 <div class="logo-circle">W</div>
                 <div class="title-block">
                     <h1 class="app-title">WBC Dashboard</h1>
-                    <p class="app-subtitle">
-                        World Baseball Classic · Pools &amp; Rankings
-                    </p>
+                    <p class="app-subtitle">World Baseball Classic Analytics</p>
                 </div>
             </div>
             <div class="header-right">
-                <span class="tag-pill">Interactive</span>
-                <span class="tag-pill">Data Visualization</span>
-                <span class="tag-pill">Baseball Analytics</span>
+                <a href="/" class="nav-btn">首頁</a>
+                <a href="/matchup" class="nav-btn">對戰模擬器</a>
             </div>
         </header>
 
-        <!-- 主內容：這裡放你原本的 index.html / pool 頁面內容 -->
-        <main class="dashboard-main">
+        <main style="width: 100%; display: block;">
             {% block content %}{% endblock %}
         </main>
 
     </div>
+
+    <script src="{{ url_for('static', filename='js/card_effect.js') }}"></script>
 </body>
 </html>

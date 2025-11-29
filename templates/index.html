@@ -1,64 +1,163 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="page-wrapper">
-  <div class="page-card">
-    <!-- 頁面標題區 -->
-    <header class="page-header">
-      <h1 class="page-title">WBC 分組總覽與世界地圖</h1>
-      <p class="page-subtitle">
-        快速瀏覽各分組的參賽國家，並透過互動世界地圖掌握各國世界排名與地理分布。
-      </p>
-    </header>
-
-    <!-- 左：分組卡片 ；右：世界地圖 -->
-    <div class="main-layout">
-      <!-- 分組列表 -->
-      <section>
-        <h2 class="section-title">分組列表</h2>
-        <p class="section-subtitle">
-          點擊任一分組可前往該組詳細頁面。
-        </p>
-
-        <ul class="pool-list">
-          {% for key, pool in pools.items() %}
-          <li class="pool-item">
-            <a class="pool-link" href="/pool/{{ key }}">
-              <div class="pool-name-row">
-                <span class="pool-name">{{ pool.name }}</span>
-                <span class="pool-tag">{{ pool.teams|length }} Teams</span>
-              </div>
-              <div class="pool-meta">
-                {{ pool.teams | map(attribute='name') | join(', ') }}
-              </div>
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <!-- 世界地圖 -->
-      <section>
-        <div class="map-card">
-          <h2 class="map-title">WBC 參賽國世界地圖（依世界排名上色）</h2>
-          <p class="map-subtitle">
-            只對本屆 WBC 參賽國上色，顏色越深代表世界排名越前面。點擊國家可下鑽到該隊資訊頁面。
-          </p>
-          <div id="world-map"></div>
-        </div>
-      </section>
-    </div>
-
-    <!-- JS：只畫世界地圖，不再畫 Bar Chart -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
-    <script>
-      const poolsData = {{ pools | tojson }};
-      // 只呼叫世界地圖的函式
-      drawMapChart(poolsData);
-    </script>
-
-  </div>
+<div style="text-align: center; margin-bottom: 50px;">
+    <h1 style="font-size: 3rem; margin: 0; background: linear-gradient(to right, #60a5fa, #c084fc); -webkit-background-clip: text; color: transparent; font-weight: 900; letter-spacing: -1px; background-clip: text;">
+        WBC ANALYTICS
+    </h1>
+    <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 10px; letter-spacing: 1px;">
+        世界棒球經典賽 · 戰力數據儀表板
+    </p>
 </div>
-{% endblock %}
 
+<section style="margin-bottom: 60px;">
+    <h3 style="margin-bottom: 30px; border-left: 4px solid var(--accent-blue); padding-left: 15px; color: #fff;">
+        TOURNAMENT POOLS
+    </h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px;">
+        {% for key, pool in pools.items() %}
+        <a href="/pool/{{ key }}" class="interactive-card card-portrait">
+            <div style="width: 100%; display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                <h2 style="margin: 0; font-size: 2rem; color: #fff;">{{ key[-1] }}</h2>
+                <span style="background: var(--accent-blue); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: #fff; font-weight: bold;">
+                    POOL
+                </span>
+            </div>
+            <div class="card-content">
+                <div style="text-align: left; width: 100%; padding: 0 10px;">
+                    {% for team in pool.teams %}
+                    <div style="color: var(--text-muted); padding: 4px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                        {{ team.name }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div style="width: 100%; margin-top: auto; padding-top: 15px; color: var(--accent-blue); font-size: 0.9rem; font-weight: bold;">
+                View Analytics &rarr;
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section>
+    <h3 style="margin-bottom: 25px; border-left: 4px solid #f59e0b; padding-left: 15px; color: #fff;">
+        GLOBAL RANKINGS (Click to View Team)
+    </h3>
+    <div class="map-card" style="border-radius: 20px; overflow: hidden; height: 600px; position: relative;">
+        <div id="world-map" style="width: 100%; height: 100%;"></div>
+    </div>
+</section>
+
+<div id="pools-data" data-pools='{{ pools | tojson | safe }}' style="display: none;"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    const poolsData = JSON.parse(document.getElementById('pools-data').dataset.pools);
+
+    function drawDarkGlobe(pools) {
+        const mapDivId = "world-map";
+        const mapDiv = document.getElementById(mapDivId);
+
+        // WBSC 世界排名資料 (範例)
+        const wbscRank = {
+            "Japan": 1, "Chinese Taipei": 2, "United States": 3, "Korea": 4, 
+            "Venezuela": 5, "Mexico": 6, "Netherlands": 7, "Cuba": 8, 
+            "Dominican Republic": 9, "Australia": 10, "Puerto Rico": 11, "Panama": 12, 
+            "Italy": 13, "Canada": 14, "Czech Republic": 15, "Great Britain": 16, 
+            "Nicaragua": 17, "Israel": 18, "Brazil": 23, "China": 24, "Colombia": 15 
+        };
+        
+        // 隊名與 Plotly 國家名稱對照
+        const nameToCountry = {
+            "USA": "United States",
+            "Great Britain": "United Kingdom",
+            "Korea": "South Korea"
+        };
+
+        const locations = [];
+        const zValues = [];
+        const texts = [];
+        const customData = []; // 用來存正確的隊名 (Team Name)
+        const seen = new Set();
+
+        Object.values(pools).forEach(pool => {
+            pool.teams.forEach(team => {
+                const teamName = team.name;
+                const countryName = nameToCountry[teamName] || teamName;
+                
+                if (seen.has(countryName)) return;
+                seen.add(countryName);
+
+                const rank = wbscRank[teamName] || wbscRank[countryName];
+                if (rank) {
+                    locations.push(countryName);
+                    zValues.push(rank);
+                    texts.push(`${teamName} (Rank: ${rank})`);
+                    customData.push(teamName); // 儲存隊名以供跳轉
+                }
+            });
+        });
+
+        const data = [{
+            type: "choropleth",
+            locationmode: "country names",
+            locations: locations,
+            z: zValues,
+            text: texts,
+            customdata: customData, // 綁定數據
+            colorscale: "Viridis",
+            reversescale: true,
+            marker: { line: { color: "#1e293b", width: 1 } },
+            colorbar: {
+                title: 'Rank',
+                tickfont: { color: '#f1f5f9' },
+                titlefont: { color: '#f1f5f9' },
+                thickness: 15,
+                len: 0.5
+            },
+            hovertemplate: "<b>%{text}</b><extra></extra>"
+        }];
+
+        const layout = {
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            geo: {
+                bgcolor: 'rgba(0,0,0,0)',
+                showland: true,
+                landcolor: "#0f172a",
+                showocean: true,
+                oceancolor: "rgba(30, 41, 59, 0.5)",
+                showcountries: true,
+                countrycolor: "#334155",
+                projection: { 
+                    type: "orthographic",
+                    rotation: { lon: 120, lat: 20 }
+                },
+                lataxis: { showgrid: true, gridcolor: "#1e293b", gridwidth: 0.5 },
+                lonaxis: { showgrid: true, gridcolor: "#1e293b", gridwidth: 0.5 }
+            },
+            margin: { t: 0, b: 0, l: 0, r: 0 },
+            font: { family: 'Inter, sans-serif' }
+        };
+
+        // 繪製地圖
+        Plotly.newPlot(mapDivId, data, layout, {displayModeBar: false});
+
+        // 【關鍵】綁定點擊事件
+        mapDiv.on('plotly_click', function(data){
+            // 檢查是否有點擊到資料點
+            if(data.points.length > 0) {
+                // 取出 customdata (隊名)
+                const teamName = data.points[0].customdata;
+                if(teamName) {
+                    // 執行跳轉
+                    window.location.href = `/team/${teamName}`;
+                }
+            }
+        });
+    }
+
+    setTimeout(() => drawDarkGlobe(poolsData), 100);
+</script>
+{% endblock %}
